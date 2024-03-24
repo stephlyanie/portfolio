@@ -3,12 +3,29 @@
   box-sizing: border-box;
 }
 
-html {
-    background-color: #FDFDFF;
-}
-
 /* Margin resets */
 body {
   margin: 3.125rem 6.25rem;
   font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+}
+
+/* Temporary Styles */
+html {
+    background-color: #FDFDFF;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 1.5rem 0 .25rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 2.5rem 0 .25rem;
+}
+
+p {
+    margin: 0;
 }
