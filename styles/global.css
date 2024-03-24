@@ -1,0 +1,14 @@
+/* border-sizing reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+    background-color: #FDFDFF;
+}
+
+/* Margin resets */
+body {
+  margin: 3.125rem 6.25rem;
+  font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+}
