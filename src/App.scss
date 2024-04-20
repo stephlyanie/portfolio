@@ -1,3 +1,5 @@
+@use "./styles/variables" as *;
+
 // border-sizing reset
 * {
   box-sizing: border-box;
@@ -5,6 +7,7 @@
 
 // Margin resets
 body {
+  background-color: $bg-site;
   margin: 0;
   font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
 }
