@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/Header/Header";
 import HomePage from "./pages/Home/HomePage";
+import Footer from "./components/Footer/Footer";
 
 import './App.scss';
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
         </Routes>
       </section>
+      <Footer />
     </BrowserRouter>
   );
 }
