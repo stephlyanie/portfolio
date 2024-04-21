@@ -9,8 +9,7 @@
     @include flex(space-between, center);
 
     &__logo {
-        background-color: $bg-site;
-        height: 2.5rem;
-        width: 8rem;
+        height: auto;
+        width: 200px;
     }
 }

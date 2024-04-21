@@ -8,14 +8,14 @@ import './App.scss';
 function App() {
   return (
     <BrowserRouter>
-     <section>
+     <section className="site-container">
         <Header />
         <Routes>
           {/* ROOT ROUTE */}
           <Route path="/" element={<HomePage />}></Route>
         </Routes>
+        <Footer />
       </section>
-      <Footer />
     </BrowserRouter>
   );
 }

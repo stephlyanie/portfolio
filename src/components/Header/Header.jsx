@@ -6,8 +6,8 @@ import MenuDrawer from "../Menus/MenuDrawer";
 function Header() {
     return (
         <header className="site-header">
-            {/* Logo */}
-            <div className="site-header__logo"></div>
+            <img src={require("../../assets/images/logo.png")} className="site-header__logo" />
+
             {/* Drawer Nav Component */}
             <section className="site-header__nav">
                 <MenuDrawer />
