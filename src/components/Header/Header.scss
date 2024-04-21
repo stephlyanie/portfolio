@@ -3,13 +3,14 @@
 
 .site-header {
     background-color: $bg-secondary-dark;
-    padding: .5rem;
+    padding: 1rem .5rem;
     width: 100%;
 
-    @include flex(space-between, center);
+    // @include flex(space-between, center);
 
     &__logo {
+        color: $text-primary-light;
+        font-size: 1.25rem;
         height: auto;
-        width: 200px;
     }
 }

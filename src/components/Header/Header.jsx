@@ -6,12 +6,12 @@ import MenuDrawer from "../Menus/MenuDrawer";
 function Header() {
     return (
         <header className="site-header">
-            <img src={require("../../assets/images/logo.png")} className="site-header__logo" />
+            <h1 className="site-header__logo">Stephanie Hall</h1>
 
             {/* Drawer Nav Component */}
-            <section className="site-header__nav">
+            {/* <section className="site-header__nav">
                 <MenuDrawer />
-            </section>
+            </section> */}
         </header>
     )
 };
