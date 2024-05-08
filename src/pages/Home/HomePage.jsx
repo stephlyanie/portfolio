@@ -78,7 +78,7 @@ function HomePage() {
             </section>
             <section className="work">
                 <h2 className="work__title">Recent Work</h2>
-                <div>
+                <div className="work__projects-container">
                 {projectList.map((project) => (
                     <div key={project.id} className="work__project">
                         <img src={project.imgURL} className="work__project-img" />
