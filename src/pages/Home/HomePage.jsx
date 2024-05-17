@@ -1,6 +1,8 @@
 // Styles
 import "./HomePage.scss";
 import {projectList} from "../../api/projectsAPI"
+import { Link } from "react-router-dom";
+
 
 function HomePage() {
 
@@ -24,7 +26,12 @@ function HomePage() {
                         <div>
                             <h3 className="work__project-title">{projectList.name}</h3>
                             <p className="work__project-skills">{projectList.topSkills}</p><br></br>
-                            <a href={projectList.url} target="_blank" className="work__project-btn">Learn More</a>
+                            <Link
+            to={`/${projectList.id}/`}
+
+            className="work__project-btn"
+          >Learn More
+          </Link>
                         </div>
                     </div>
                 ))}

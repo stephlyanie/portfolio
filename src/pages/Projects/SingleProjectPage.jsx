@@ -72,6 +72,7 @@ function SingleProjectPage() {
               </ul>
             </AccordionDetails>
           </Accordion>
+          {projectObj.nextStepsList ?
           <Accordion>
             <AccordionSummary sx={{[`&:hover`]: {bgcolor: "#E7E3F1"}, ['& .css-1twr7re-JoyAccordionSummary-button:not(.Mui-selected, [aria-selected="true"]):hover']: {bgcolor: "#E7E3F1"}}}>
               <p className="project__accordion-title">Next Steps</p>
@@ -83,7 +84,7 @@ function SingleProjectPage() {
                 })}
               </ul>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> : null}
         </AccordionGroup>
 
         {projectObj.relatedProjectsList ? (
