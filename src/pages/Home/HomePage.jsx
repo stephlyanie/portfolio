@@ -21,7 +21,6 @@ function HomePage() {
                 {projectList.map((projectList) => (
                     <div key={projectList.id} className="work__project">
                         <img src={projectList.imgURL} className="work__project-img" />
-                        {/* <img src={require("../../assets/images/portfolio-tb-sfu-website.png")} className="work__project-img" /> */}
                         <div>
                             <h3 className="work__project-title">{projectList.name}</h3>
                             <p className="work__project-skills">{projectList.topSkills}</p><br></br>

@@ -4,7 +4,7 @@ export const projectList = [
       projectName: "SFU Centre for Dialogue Website Redesign",
       projectURL: "https://www.sfu.ca/dialogue.html",
       imgURL: require("../assets/images/portfolio-tb-sfu-website.png"),
-      status: "Phase One Complete, Phase Two In Progres",
+      status: "Phase One Complete, Phase Two In Progress",
       type: "Employee",
       client: "SFU Morris J. Wosk Centre for Dialogue",
       role: "Product Manager and Designer",
@@ -58,7 +58,7 @@ export const projectList = [
       relatedProjectsList: [],
       SupportingLinksList: [
         {
-          urlName: "Figma",
+          urlName: "Figma Wireframes",
           url: "https://www.figma.com/design/FGzXzHSoMXff4taUFWdWWN/CLF4-Redesign",
         },
       ],

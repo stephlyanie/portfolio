@@ -25,3 +25,31 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
 }
+
+.button {
+  padding: .75rem 2rem;
+  text-decoration: none;
+  background-color: $bg-secondary-dark;
+  color: $text-primary-light;
+  display: inline-block;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $bg-primary-light;
+    color: $text-secondary-dark;
+  }
+}
+
+.button-alt {
+    border: solid 2px $bg-primary-light;
+    color: $text-secondary-dark;
+    background-color: $bg-secondary-light;
+    font-size: .75rem;
+    padding: .5rem 1rem;
+
+    &:hover {
+      background-color: $bg-primary-light;
+    }
+}

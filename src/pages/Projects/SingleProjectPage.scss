@@ -1,2 +1,95 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.project {
+    margin: 1rem;
+
+    &__image {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        margin: 0.5rem 0;
+    }
+
+    &__heading {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    &__subheading {
+        font-size: 1rem;
+        color:$text-secondary-dark;
+        text-transform: uppercase;
+    }
+
+    &__detail {
+        font-size: .875rem;
+        margin: .25rem 0 1rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__detail-list {
+        font-size: .875rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__accordion-title {
+        font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+        font-size: .875rem;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__button {
+        margin-bottom: 1rem;
+    }
+
+    &__skill-list {
+        @include list-reset;
+        margin-bottom: 1rem;
+        font-size: .875rem;
+
+        &::before{
+            content: " • ";
+            color: $text-secondary-dark;
+        }
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
+    &__skill{
+        &::after{
+            content: " • ";
+            color: $text-secondary-dark;
+        }
+    }
+
+    @include tablet {
+        @include flex(space-between);
+        margin: 2rem 4rem;
+        max-width: 1450px;
+
+        &__section {
+            width: 48%;
+        }
+    
+        &__image {
+            width: 100%;
+        }
+    }  
+}
