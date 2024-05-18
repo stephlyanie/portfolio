@@ -6,11 +6,14 @@
     padding: 1rem .5rem;
     width: 100%;
 
-    // @include flex(space-between, center);
-
-    &__logo {
+    &__logo, &__logo > h1 {
         color: $text-primary-light;
         font-size: 1.25rem;
         height: auto;
+        text-decoration: none;
+
+        &:hover {
+            color: $text-secondary-light;
+        }
     }
 }
