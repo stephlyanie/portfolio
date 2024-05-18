@@ -22,7 +22,9 @@ function HomePage() {
                 <div className="work__projects-container">
                 {projectList.map((projectList) => (
                     <div key={projectList.id} className="work__project">
-                        <img src={projectList.imgURL} className="work__project-img" />
+                        <Link
+            to={`/${projectList.id}/`}
+          ><img src={projectList.imgURL} className="work__project-img" /></Link>
                         <div>
                             <h3 className="work__project-title">{projectList.name}</h3>
                             <p className="work__project-skills">{projectList.topSkills}</p><br></br>
