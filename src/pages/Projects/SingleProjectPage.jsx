@@ -99,9 +99,9 @@ function SingleProjectPage() {
         <a href={projectObj.projectURL} className="button project__button" target="_blank">
                       Visit Project
                     </a>
-        {projectObj.SupportingLinksList ? (
+        {projectObj.supportingLinksList ? (
           <div className="project__supporting-links-list">
-              {projectObj.SupportingLinksList.map((supportingLink) => {
+              {projectObj.supportingLinksList.map((supportingLink) => {
                 return (
                     <a href={supportingLink.url} className="button button-alt project__button" target="_blank">
                       {supportingLink.urlName}
