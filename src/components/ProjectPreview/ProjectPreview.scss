@@ -47,25 +47,8 @@
     }
 
     &__btn {
-        background-color: $bg-btn;
-        border-radius: 1.5625rem;
-        color: $text-primary-light;
-        display: block;
-        font-size: .875rem;
-        font-weight: bold;
-        margin: 0 auto;
         max-width: 300px;
         padding: .75rem 1rem;
-        text-decoration: none;
         width: 95%;
-
-        &:hover {
-            background-color: $bg-btn-hover;
-            color: $text-secondary-dark;
-        }
-
-        @include desktop {
-            font-size: 1.5rem;
-        }
     }
 }

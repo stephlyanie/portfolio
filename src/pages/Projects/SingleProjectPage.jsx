@@ -19,7 +19,11 @@ function SingleProjectPage() {
   return (
     <section className="project">
       <div className="project__section">
-        <img src={projectObj.thumbnail.url} alt={projectObj.thumbnail.altText} className="project__image" />
+        <img
+          src={projectObj.thumbnail.url}
+          alt={projectObj.thumbnail.altText}
+          className="project__image"
+        />
       </div>
       <div className="project__section">
         <h1 className="project__title">{projectObj.projectName}</h1>
@@ -29,13 +33,15 @@ function SingleProjectPage() {
             ? projectObj.type
             : projectObj.client}
         </h2>
-        <a
-          href={projectObj.projectURL}
-          className="button button__featured project__button"
-          target="_blank"
-        >
-          Visit Project
-        </a>
+        {projectObj.projectURL ? (
+          <a
+            href={projectObj.projectURL}
+            className="button button__featured project__button"
+            target="_blank"
+          >
+            Visit Project
+          </a>
+        ) : null}
         <h3 className="project__subheading">Status</h3>
         <p className="project__detail">{projectObj.status}</p>
         <h3 className="project__subheading">Launch Date</h3>
@@ -102,13 +108,15 @@ function SingleProjectPage() {
             })}
           </ul>
         ) : null}
-        <a
-          href={projectObj.projectURL}
-          className="button project__button"
-          target="_blank"
-        >
-          Visit Project
-        </a>
+        {projectObj.projectURL ? (
+          <a
+            href={projectObj.projectURL}
+            className="button project__button"
+            target="_blank"
+          >
+            Visit Project
+          </a>
+        ) : null}
         {projectObj.supportingLinksList ? (
           <div className="project__supporting-links-list">
             {projectObj.supportingLinksList.map((supportingLink) => {

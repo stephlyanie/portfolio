@@ -1,5 +1,62 @@
 export const projectList = [
   {
+    id: "portfolio",
+    projectName: "Project Portfolio",
+    projectURL: "https://stephaniehall.ca/",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-portfolio-website.png"),
+      altText: "Mockup of Stephanie Hall's portfolio home page on a tablet",
+    },
+    status: "Launched, Ongoing Maintenance",
+    type: "Personal",
+    client: "Personal Project",
+    role: "Software Developer",
+    launchDate: "May 2024",
+    topSkills: "React | JavaScript | Product Design",
+    skills: [
+      "React",
+      "Javascript",
+      "SCSS",
+      "GitHub",
+      "cPanel",
+      "Joy UI",
+      "HTML",
+      "Product Design",
+      "UI Design",
+    ],
+    challenge:
+      "My portfolio includes a wide range of projects within softwared development, UI design, graphic design and communications.",
+    solution:
+      "To showcase this wide range, I developed a React App and accompanying API that features my portfolio, the broad range of skills I've developed and my roles within each project.",
+    roleIntro:
+      "I worked as the sole creator, designer and developer for this portfolio.",
+    roleList: [
+      "Created a SPA using React",
+      "Developed a static API in JavaScript",
+      "Implemented Joy UI components",
+      "Created site mockups using Figma",
+      "Designed fully responsive, mobile-first site using Sass",
+    ],
+    outcomes:
+      "The portfolio was launched in May 2024 and is continually updated.",
+    nextStepsList: [
+      "Add more projects to the API",
+      "Add an about me page",
+      "Add more photos to the project pages",
+      "Develop a database in mySQL and implement 'like' functionality",
+    ],
+    relatedProjectsList: [],
+    supportingLinksList: [
+      {
+        urlName: "Figma Wireframes",
+        url: "https://www.figma.com/design/j5zDOuu3IwN4PzMXIF4SmO/Portfolio",
+      }, {
+        urlName: "Git Repository",
+        url: "https://github.com/stephlyanie/portfolio",
+      },
+    ],
+  },
+  {
     id: "sfu-website-redesign",
     projectName: "SFU Centre for Dialogue Website Redesign",
     projectURL: "https://www.sfu.ca/dialogue.html",
@@ -79,8 +136,17 @@ export const projectList = [
     client: "BrainStation Capstone Project",
     role: "Creator",
     launchDate: "TBD",
-    topSkills: "mySQL, Node JS, React",
-    skills: ["mySQL", "Node JS", "React", "JavaScript"],
+    topSkills: "mySQL | Node JS | React",
+    skills: [
+      "mySQL", 
+      "Node JS", 
+      "React", 
+      "JavaScript", 
+      "SCSS", 
+      "Joy UI", 
+      "Axios", 
+      "GitHub",
+    ],
     challenge:
       "As the final project for the BrainStation software engineering diploma, we were tasked with the challenge of creating a full stack app.",
     solution:
@@ -106,6 +172,12 @@ export const projectList = [
       {
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/8TBdU8lM0GM8RrNKSR3Su3/Challenge-Accepted",
+      }, {
+        urlName: "Git GUI Repository",
+        url: "https://github.com/stephlyanie/challenge-accepted-gui",
+      }, {
+        urlName: "Git API Repository",
+        url: "https://github.com/stephlyanie/challenge-accepted-api",
       },
     ],
   },
@@ -140,7 +212,46 @@ export const projectList = [
     ],
     outcomes:
       "The site was successfully launched and continues to contribute to the client's successful counselling practice.",
-    nextStepsList: [],
+    nextStepsList: "",
+    relatedProjectsList: [],
+    supportingLinksList: [],
+  },{
+    id: "democratic-champions",
+    projectName: "Democratic Champions Card Game Design",
+    projectURL: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/democratic-champions-card-game.html ",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-scd-democratic-champs.png"),
+      altText: "Mockup of 18 cards from the Democratic Champions game",
+    },
+    status: "Complete",
+    type: "Freelance",
+    client: "SFU's Strengthening Canadian Democracy Initiative",
+    role: "Graphic Designer",
+    launchDate: "Sep 2021",
+    topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
+    skills: [
+      "Graphic Design", 
+      "Adobe InDesign", 
+      "Adobe Illustrator",
+      "Client Relations",
+      "Greyscale Design",
+    ],
+    challenge:
+      "The Strengthening Canadian Democracy Initiative at SFU's Morris J. Wosk Centre for Dialogue created a game to explore how to navigate democracy to inspire change.",
+    solution:
+      "They contracted me to design the playing cards and instruction sheets. These materials needed to be accessible for folks to download and print in black and white.",
+    roleIntro: 
+      "I used Adobe InDesign and Illustrator programs to design the materials and provided printable pdfs to the team.",
+    roleList: [
+      "Designed five playing card types",
+      "Designed the layout for the game instructions",
+      "Sourced stock icons to represent the five card types",
+      "Supplied printable, U.S. Letter pdf versions in black and white",
+      "Delivered all design files at the end of the project",
+    ],
+    outcomes:
+      "The game was piloted by community groups in Kelowna, by SFU students, and in private homes and received positive reviews.",
+    nextStepsList: "",
     relatedProjectsList: [],
     supportingLinksList: [],
   },
@@ -195,12 +306,66 @@ export const projectList = [
       "Created and revised all materials based on feedback from trans and non-binary youth advisory groups across the country",
     ],
     outcomes: "The report was launched in November 2020.",
-    nextStepsList: [],
+    nextStepsList: "",
     relatedProjectsList: [],
     supportingLinksList: [
       {
         urlName: "Video Series",
         url: "https://youtube.com/playlist?list=PL3AChx0wmhduwl6-oFJ_D7T9VZARb_dyh&si=e9IReQwrNLF-cqDU",
+      },
+    ],
+  },{
+    id: "democracy-infographics",
+    projectName: "Strengthening Canadian Democracy Infographics",
+    projectURL: "",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-scd-infographics.png"),
+      altText: "Mockup of three infographics each on a smartphone screen",
+    },
+    status: "Complete",
+    type: "Freelance",
+    client: "SFU's Strengthening Canadian Democracy Initiative",
+    role: "Graphic Designer",
+    launchDate: "Sep 2020",
+    topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
+    skills: [
+      "Graphic Design", 
+      "Adobe InDesign", 
+      "Adobe Illustrator",
+      "Client Relations",
+    ],
+    challenge:
+      "The Strengthening Canadian Democracy team at SFU's Morris J. Wosk Centre for Dialogue was looking to mobilize their findings in a visual way.",
+    solution:
+      "They contracted me to design four infographics.",
+    roleIntro: 
+      "I used Adobe InDesign and Illustrator programs to design the materials and provided digital versions to be displayed on their website. ",
+    roleList: [
+      "Designed infographics from data provided by the team",
+      "Aligned designs to the project's brand guidelines",
+      "Made content recommendations for concision and audience engagement",
+      "Sourced stock icons to incorporate in the design",
+    ],
+    outcomes:
+      "The infographics were published on their website and helped to bring greater understanding to the findings from their work. ",
+    nextStepsList: "",
+    relatedProjectsList: [],
+    supportingLinksList: [
+      {
+        urlName: "Semester in Democracy Report Card",
+        url: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/semester-in-democracy/semester-in-democracy-report-card.html",
+      },
+      {
+        urlName: "Engaging Young People in Your Community",
+        url: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/city-shapers/engaging-young-people.html",
+      },
+      {
+        urlName: "Spark Democracy in your Library",
+        url: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/the-library-collaborations-project/spark-democracy-infographic.html",
+      },
+      {
+        urlName: "Four Attributes that Promote People to Make Change",
+        url: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/neighbourhood-small-grants/4-attributes-that-motivate-people.html",
       },
     ],
   },
