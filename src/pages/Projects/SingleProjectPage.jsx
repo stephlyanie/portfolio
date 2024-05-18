@@ -19,7 +19,7 @@ function SingleProjectPage() {
   return (
     <section className="project">
       <div className="project__section">
-        <img src={projectObj.imgURL} alt="temp" className="project__image" />
+        <img src={projectObj.thumbnail.url} alt={projectObj.thumbnail.altText} className="project__image" />
       </div>
       <div className="project__section">
         <h1 className="project__title">{projectObj.projectName}</h1>
