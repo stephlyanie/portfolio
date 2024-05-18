@@ -3,10 +3,9 @@ import { projectList } from "../../api/projectsAPI";
 
 import { useParams } from "react-router-dom";
 
+import AccordionItem from "../../components/AccordionItem/AccordionItem";
+
 import AccordionGroup from "@mui/joy/AccordionGroup";
-import Accordion from "@mui/joy/Accordion";
-import AccordionDetails from "@mui/joy/AccordionDetails";
-import AccordionSummary from "@mui/joy/AccordionSummary";
 
 function SingleProjectPage() {
   // Captures challenge id from url and saves in variable
@@ -20,7 +19,11 @@ function SingleProjectPage() {
   return (
     <section className="project">
       <div className="project__section">
-        <img src={projectObj.imgURL} alt="temp" className="project__image" />
+        <img
+          src={projectObj.thumbnail.url}
+          alt={projectObj.thumbnail.altText}
+          className="project__image"
+        />
       </div>
       <div className="project__section">
         <h1 className="project__title">{projectObj.projectName}</h1>
@@ -30,13 +33,28 @@ function SingleProjectPage() {
             ? projectObj.type
             : projectObj.client}
         </h2>
-        <a
-          href={projectObj.projectURL}
-          className="button button__featured project__button"
-          target="_blank"
-        >
-          Visit Project
-        </a>
+        {projectObj.skillLogos ? (
+          <div className="project__skill-logos-container">
+            {projectObj.skillLogos.map((skillLogo) => {
+              return (
+                <img
+                  src={skillLogo.url}
+                  alt={skillLogo.altText}
+                  className="project__skill-logo"
+                />
+              );
+            })}
+          </div>
+        ) : null}
+        {projectObj.projectURL ? (
+          <a
+            href={projectObj.projectURL}
+            className="button button__featured project__button"
+            target="_blank"
+          >
+            Visit Project
+          </a>
+        ) : null}
         <h3 className="project__subheading">Status</h3>
         <p className="project__detail">{projectObj.status}</p>
         <h3 className="project__subheading">Launch Date</h3>
@@ -60,43 +78,28 @@ function SingleProjectPage() {
           variant="plain"
           sx={{ ml: -1.5, mb: 3, bgColor: "white" }}
         >
-          <Accordion>
-            <AccordionSummary
-              sx={{
-                [`&:hover`]: { bgcolor: "#E7E3F1" },
-                ['& .css-1twr7re-JoyAccordionSummary-button:not(.Mui-selected, [aria-selected="true"]):hover']:
-                  { bgcolor: "#E7E3F1" },
-              }}
-            >
-              <p className="project__accordion-title">
-                Learn More About my Role
-              </p>
-            </AccordionSummary>
-            <AccordionDetails>
-              <p className="project__detail-accordion">In my role, I:</p>
-              <ul className="project__detail-list">
-                {projectObj.roleList.map((roleListItem) => {
-                  return (
-                    <li className="project__detail-list-item">
-                      {roleListItem}
-                    </li>
-                  );
-                })}
-              </ul>
-            </AccordionDetails>
-          </Accordion>
+          <AccordionItem
+            title={"Learn More About my Role"}
+            details={
+              <div>
+                <p className="project__detail-accordion">In my role, I:</p>
+                <ul className="project__detail-list">
+                  {projectObj.roleList.map((roleListItem) => {
+                    return (
+                      <li className="project__detail-list-item">
+                        {roleListItem}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            }
+          />
+
           {projectObj.nextStepsList ? (
-            <Accordion>
-              <AccordionSummary
-                sx={{
-                  [`&:hover`]: { bgcolor: "#E7E3F1" },
-                  ['& .css-1twr7re-JoyAccordionSummary-button:not(.Mui-selected, [aria-selected="true"]):hover']:
-                    { bgcolor: "#E7E3F1" },
-                }}
-              >
-                <p className="project__accordion-title">Next Steps</p>
-              </AccordionSummary>
-              <AccordionDetails>
+            <AccordionItem
+              title={"Next Steps"}
+              details={
                 <ul className="project__detail-list">
                   {projectObj.nextStepsList.map((step) => {
                     return (
@@ -104,8 +107,8 @@ function SingleProjectPage() {
                     );
                   })}
                 </ul>
-              </AccordionDetails>
-            </Accordion>
+              }
+            />
           ) : null}
         </AccordionGroup>
 
@@ -118,13 +121,15 @@ function SingleProjectPage() {
             })}
           </ul>
         ) : null}
-        <a
-          href={projectObj.projectURL}
-          className="button project__button"
-          target="_blank"
-        >
-          Visit Project
-        </a>
+        {projectObj.projectURL ? (
+          <a
+            href={projectObj.projectURL}
+            className="button project__button"
+            target="_blank"
+          >
+            Visit Project
+          </a>
+        ) : null}
         {projectObj.supportingLinksList ? (
           <div className="project__supporting-links-list">
             {projectObj.supportingLinksList.map((supportingLink) => {

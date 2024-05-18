@@ -44,18 +44,6 @@
 
     &__detail-accordion {
         font-size: .875rem;
-        // margin: .25rem 0 1rem;
-
-        @include tablet {
-            font-size: 1rem;
-        }
-    }
-
-    &__accordion-title {
-        font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
-        font-size: .875rem;
-        text-transform: uppercase;
-        font-weight: bold;
 
         @include tablet {
             font-size: 1rem;
@@ -86,6 +74,16 @@
             content: " • ";
             color: $text-secondary-dark;
         }
+    }
+
+    &__skill-logos-container {
+        margin-bottom: 1rem;
+    }
+
+    &__skill-logo {
+        height: 50px;
+        width: auto;
+        padding-right: .5rem;
     }
 
     @include tablet {
