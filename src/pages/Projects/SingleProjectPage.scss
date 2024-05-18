@@ -76,6 +76,16 @@
         }
     }
 
+    &__skill-logos-container {
+        margin-bottom: 1rem;
+    }
+
+    &__skill-logo {
+        height: 50px;
+        width: auto;
+        padding-right: .5rem;
+    }
+
     @include tablet {
         @include flex(space-between);
         margin: 2rem 4rem;

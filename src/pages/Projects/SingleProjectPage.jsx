@@ -33,6 +33,19 @@ function SingleProjectPage() {
             ? projectObj.type
             : projectObj.client}
         </h2>
+        {projectObj.skillLogos ? (
+          <div className="project__skill-logos-container">
+            {projectObj.skillLogos.map((skillLogo) => {
+              return (
+                <img
+                  src={skillLogo.url}
+                  alt={skillLogo.altText}
+                  className="project__skill-logo"
+                />
+              );
+            })}
+          </div>
+        ) : null}
         {projectObj.projectURL ? (
           <a
             href={projectObj.projectURL}

@@ -1,3 +1,5 @@
+import React from "react";
+
 export const projectList = [
   {
     id: "portfolio",
@@ -23,6 +25,36 @@ export const projectList = [
       "HTML",
       "Product Design",
       "UI Design",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/react.jpg"),
+        altText: "React Logo",
+      },
+      {
+        url: require("../assets/logos/javascript.jpg"),
+        altText: "Javascript Logo",
+      },
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/sass.jpg"),
+        altText: "Sass Logo",
+      },
+      {
+        url: require("../assets/logos/mui.jpg"),
+        altText: "Material UI Logo",
+      },
+      {
+        url: require("../assets/logos/github.jpg"),
+        altText: "GitHub Logo",
+      },
     ],
     challenge:
       "My portfolio includes a wide range of projects within softwared development, UI design, graphic design and communications.",
@@ -86,6 +118,20 @@ export const projectList = [
       "Web Strategy",
       "Content Strategy",
     ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/w3c.jpg"),
+        altText: "W3C Web Standards Logo",
+      },
+    ],
     challenge:
       "The Centre for Dialogue underwent a period of rapid growth. A side effect of this growth was that the brand narrative had not kept up with the complexity of projects and achievements throughout the Centre. One of the ways this challenge manifested itself publicly was through the website, which had unclear user journeys to understand the Centre's mission for its various audiences.",
     solution:
@@ -141,11 +187,60 @@ export const projectList = [
       "mySQL", 
       "Node JS", 
       "React", 
+      "Express JS",
       "JavaScript", 
       "SCSS", 
       "Joy UI", 
       "Axios", 
       "GitHub",
+      "HTML",
+      "CSS",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/react.jpg"),
+        altText: "React Logo",
+      },
+      {
+        url: require("../assets/logos/node-js.jpg"),
+        altText: "Node JS Logo",
+      },
+      {
+        url: require("../assets/logos/express-js.jpg"),
+        altText: "Express JS Logo",
+      },
+      {
+        url: require("../assets/logos/axios.jpg"),
+        altText: "Axios Logo",
+      },
+      {
+        url: require("../assets/logos/mysql.jpg"),
+        altText: "mySQL Logo",
+      },
+      {
+        url: require("../assets/logos/javascript.jpg"),
+        altText: "JavaScript Logo",
+      },
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/sass.jpg"),
+        altText: "Sass Logo",
+      },
+      {
+        url: require("../assets/logos/mui.jpg"),
+        altText: "Material UI Logo",
+      },
+      {
+        url: require("../assets/logos/github.jpg"),
+        altText: "GitHub Logo",
+      },
     ],
     challenge:
       "As the final project for the BrainStation software engineering diploma, we were tasked with the challenge of creating a full stack app.",
@@ -196,6 +291,20 @@ export const projectList = [
     launchDate: "March 2021",
     topSkills: "CSS | HTML | WordPress",
     skills: ["CSS", "HTML", "WordPress", "Client Management"],
+    skillLogos: [
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/wordpress.jpg"),
+        altText: "WordPress Logo",
+      },
+    ],
     challenge:
       "Jane Whitlaw approached me to design a website to help her launch her counselling practice in South Surrey.",
     solution:
@@ -235,6 +344,16 @@ export const projectList = [
       "Adobe Illustrator",
       "Client Relations",
       "Greyscale Design",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/indesign.jpg"),
+        altText: "Adobe InDesign Logo",
+      },
+      {
+        url: require("../assets/logos/illustrator.jpg"),
+        altText: "Adobe Illustrator Logo",
+      },
     ],
     challenge:
       "The Strengthening Canadian Democracy Initiative at SFU's Morris J. Wosk Centre for Dialogue created a game to explore how to navigate democracy to inspire change.",
@@ -288,6 +407,32 @@ export const projectList = [
       "Adobe Photoshop",
       "Social Media",
     ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/wordpress.jpg"),
+        altText: "WordPress Logo",
+      },
+      {
+        url: require("../assets/logos/indesign.jpg"),
+        altText: "Adobe InDesign Logo",
+      },
+      {
+        url: require("../assets/logos/illustrator.jpg"),
+        altText: "Adobe Illustrator Logo",
+      },
+      {
+        url: require("../assets/logos/photoshop.jpg"),
+        altText: "Adobe Photoshop Logo",
+      },
+    ],
     challenge:
       "In 2019, SARAVYC at UBC launched their findings from the Canadian Trans and Non-binary Youth Health Survey. In addition to academic articles and presentations, the researchers wanted their findings to be accessible to a wide audience.",
     solution:
@@ -333,6 +478,16 @@ export const projectList = [
       "Adobe InDesign", 
       "Adobe Illustrator",
       "Client Relations",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/indesign.jpg"),
+        altText: "Adobe InDesign Logo",
+      },
+      {
+        url: require("../assets/logos/illustrator.jpg"),
+        altText: "Adobe Illustrator Logo",
+      },
     ],
     challenge:
       "The Strengthening Canadian Democracy team at SFU's Morris J. Wosk Centre for Dialogue was looking to mobilize their findings in a visual way.",
@@ -401,6 +556,32 @@ export const projectList = [
       "Adobe Illustrator",
       "Adobe Photoshop",
       "Social Media",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/html.jpg"),
+        altText: "HTML Logo",
+      },
+      {
+        url: require("../assets/logos/css.jpg"),
+        altText: "CSS Logo",
+      },
+      {
+        url: require("../assets/logos/wordpress.jpg"),
+        altText: "WordPress Logo",
+      },
+      {
+        url: require("../assets/logos/indesign.jpg"),
+        altText: "Adobe InDesign Logo",
+      },
+      {
+        url: require("../assets/logos/illustrator.jpg"),
+        altText: "Adobe Illustrator Logo",
+      },
+      {
+        url: require("../assets/logos/photoshop.jpg"),
+        altText: "Adobe Photoshop Logo",
+      },
     ],
     challenge:
       "In 2019, SARAVYC at UBC was ready to mobilize their research findings to East Asian families in British Columbia.",
