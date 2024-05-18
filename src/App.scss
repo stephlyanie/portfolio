@@ -40,6 +40,17 @@ p {
     background-color: $bg-primary-light;
     color: $text-secondary-dark;
   }
+
+  &__featured {
+    background-color: $bg-primary-dark;
+    color: $text-primary-light;
+    border: solid 2px $border-featured-dark;
+
+    &:hover {
+      background-color: $bg-secondary-light;
+      color: $text-featured-dark;
+    }
+  }
 }
 
 .button-alt {

@@ -42,6 +42,15 @@
         }
     }
 
+    &__detail-accordion {
+        font-size: .875rem;
+        // margin: .25rem 0 1rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
+    }
+
     &__accordion-title {
         font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
         font-size: .875rem;
