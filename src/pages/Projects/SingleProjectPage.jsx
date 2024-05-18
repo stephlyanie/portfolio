@@ -32,7 +32,7 @@ function SingleProjectPage() {
         </h2>
         <a
           href={projectObj.projectURL}
-          className="button project__button"
+          className="button button__featured project__button"
           target="_blank"
         >
           Visit Project
