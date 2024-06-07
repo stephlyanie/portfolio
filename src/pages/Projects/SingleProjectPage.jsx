@@ -8,6 +8,9 @@ import AccordionItem from "../../components/AccordionItem/AccordionItem";
 import AccordionGroup from "@mui/joy/AccordionGroup";
 
 function SingleProjectPage() {
+  // Scrolls page to top on load
+  window.scrollTo(0, 0);
+
   // Captures challenge id from url and saves in variable
   const { projectPageId } = useParams();
 
