@@ -4,6 +4,9 @@ import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
 import { projectList } from "../../api/projectsAPI";
 
 function HomePage() {
+  // Scrolls page to top on load
+  window.scrollTo(0, 0);
+  
   return (
     <section className="home">
       <section className="hero">
