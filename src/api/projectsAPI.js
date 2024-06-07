@@ -14,9 +14,9 @@ export const projectList = [
     client: "Personal Project",
     role: "Software Developer",
     launchDate: "May 2024",
-    topSkills: "React | JavaScript | Product Design",
+    topSkills: "React JS | JavaScript | Product Design",
     skills: [
-      "React",
+      "React JS",
       "Javascript",
       "SCSS",
       "GitHub",
@@ -63,7 +63,7 @@ export const projectList = [
     roleIntro:
       "I worked as the sole creator, designer and developer for this portfolio.",
     roleList: [
-      "Created a SPA using React",
+      "Created a SPA using  JS",
       "Developed a static API in JavaScript",
       "Implemented Joy UI components",
       "Created site mockups using Figma",
@@ -77,7 +77,14 @@ export const projectList = [
       "Add more photos to the project pages",
       "Develop a database in mySQL and implement 'like' functionality",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "sfu-website-redesign",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
@@ -100,7 +107,7 @@ export const projectList = [
     type: "Employee",
     client: "SFU Morris J. Wosk Centre for Dialogue",
     role: "Product Manager and Designer",
-    launchDate: "Feb. 15, 2024",
+    launchDate: "February 2024",
     topSkills: "HTML | Product Management | UI Design",
     skills: [
       "HTML",
@@ -161,7 +168,7 @@ export const projectList = [
       "Finesse brand narrative content",
       "Develop and maintain a site manual to document processes and rationale",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: "",
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
@@ -182,11 +189,11 @@ export const projectList = [
     client: "BrainStation Capstone Project",
     role: "Creator",
     launchDate: "TBD",
-    topSkills: "mySQL | Node JS | React",
+    topSkills: "mySQL | Node JS | React JS",
     skills: [
       "mySQL", 
       "Node JS", 
-      "React", 
+      "React JS", 
       "Express JS",
       "JavaScript", 
       "SCSS", 
@@ -251,7 +258,7 @@ export const projectList = [
     roleList: [
       "Designed UI using Figma",
       "Developed brand guidelines",
-      "Developed front-end using React",
+      "Developed front-end using React JS",
       "Developed back-end using Node",
       "Created database in mySQL",
     ],
@@ -262,7 +269,14 @@ export const projectList = [
       "Add more categories",
       "Implement more interactivity such as liking and commenting",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "portfolio",
+      },
+      {
+        id: "maple-counselling-website",
+      }
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
@@ -322,7 +336,14 @@ export const projectList = [
     outcomes:
       "The site was successfully launched and continues to contribute to the client's successful counselling practice.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "porfolio",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [],
   },{
     id: "democratic-champions",
@@ -336,7 +357,7 @@ export const projectList = [
     type: "Freelance",
     client: "SFU's Strengthening Canadian Democracy Initiative",
     role: "Graphic Designer",
-    launchDate: "Sep 2021",
+    launchDate: "September 2021",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
       "Graphic Design", 
@@ -371,7 +392,14 @@ export const projectList = [
     outcomes:
       "The game was piloted by community groups in Kelowna, by SFU students, and in private homes and received positive reviews.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "democracy-infographics",
+      },
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+    ],
     supportingLinksList: [],
   },
   {
@@ -386,7 +414,7 @@ export const projectList = [
     type: "Employee",
     client: "SARAVYC at UBC",
     role: "Designer and Writer",
-    launchDate: "Nov. 16, 2020",
+    launchDate: "November 2020",
     topSkills: "CSS | UI Design | Graphic Design",
     skills: [
       "CSS",
@@ -452,7 +480,14 @@ export const projectList = [
     ],
     outcomes: "The report was launched in November 2020.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "saravyc-out-at-home",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Video Series",
@@ -471,7 +506,7 @@ export const projectList = [
     type: "Freelance",
     client: "SFU's Strengthening Canadian Democracy Initiative",
     role: "Graphic Designer",
-    launchDate: "Sep 2020",
+    launchDate: "September 2020",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
       "Graphic Design", 
@@ -504,7 +539,14 @@ export const projectList = [
     outcomes:
       "The infographics were published on their website and helped to bring greater understanding to the findings from their work. ",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "democratic-champions",
+      },
+      {
+        id: "legion-key-tag-campaign",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Semester in Democracy Report Card",
@@ -525,6 +567,62 @@ export const projectList = [
     ],
   },
   {
+    id: "legion-key-tag-campaign",
+    projectName: "Key Tag Campaign",
+    projectURL: "",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-key-chain.png"),
+      altText: "Mockup of three key chain designs",
+    },
+    status: "Launched",
+    type: "Freelance",
+    client: "Legion Foundation",
+    role: "Designer & Writer",
+    launchDate: "August 2020",
+    topSkills: "Graphic Design | Adobe Illustrator | Fundraising",
+    skills: [
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "Fundraising",
+      "Graphic Design",
+      "Writing",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/illustrator.jpg"),
+        altText: "Adobe Illustrator Logo",
+      },
+      {
+        url: require("../assets/logos/indesign.jpg"),
+        altText: "Adobe InDesign Logo",
+      },
+    ],
+    challenge:
+      "Each year, the Legion Foundation raises funds for their veteran programs through a key chain campaign.",
+    solution:
+      "After writing the fundraising letter their 2019 campaign, they contacted me to support their 2020 campaign.",
+    roleIntro:
+      "I designed the 2020 key chains and and wrote the fundraising letter.",
+    roleList: [
+      "Met with the clients to gather scope requirements",
+      "Interviewed a veteran and included their story in the fundraising letter",
+      "Designed the layout for the fundraising letter using Adobe InDesign",
+      "Designed three key chains using Adobe Illustrator",
+    ],
+    outcomes:
+      "The key tags contributed to the Legion Foundation's successful fundraising.",
+    nextStepsList: "",
+    relatedProjectsList: [
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
+    supportingLinksList: "",
+  },
+  {
     id: "saravyc-out-at-home",
     projectName: "Out at Home",
     projectURL: "https://www.saravyc.ubc.ca/outathome/",
@@ -536,7 +634,7 @@ export const projectList = [
     type: "Employee",
     client: "SARAVYC at UBC",
     role: "Designer and Writer",
-    launchDate: "Oct 2019",
+    launchDate: "October 2019",
     topSkills: "CSS | UI Design | Graphic Design",
     skills: [
       "CSS",
@@ -601,8 +699,15 @@ export const projectList = [
     ],
     outcomes:
       "he materials were launched in October 2019. One of the collaborating researchers shared with me that this was the first time they'd seen supportive, research-based resources for LGBTQ+ youth written in their native language.",
-    nextStepsList: [],
-    relatedProjectsList: [],
+    nextStepsList: "",
+    relatedProjectsList: [
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Video Series",
