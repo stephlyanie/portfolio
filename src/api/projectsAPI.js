@@ -345,7 +345,7 @@ export const projectList = [
     roleList: [
       "Facilitated visioning for the podcast",
       "Created a project framework and timeline for season one",
-      "Delegated tasks and reviewed all materials before publication",
+      "Delegated tasks and reviewed all materials",
       "Brainstormed podcast names and ultimately came up with the winning name—Talk Dialogue to Me",
       "Designed the SFU website landing page layouts",
       "Co-developed the theme for season one",
