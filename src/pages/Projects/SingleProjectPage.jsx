@@ -1,9 +1,10 @@
 import "./SingleProjectPage.scss";
 import { projectList } from "../../api/projectsAPI";
 
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import AccordionItem from "../../components/AccordionItem/AccordionItem";
+import RelatedProject from "../../components/RelatedProject/RelatedProject";
 
 import AccordionGroup from "@mui/joy/AccordionGroup";
 
@@ -43,6 +44,7 @@ function SingleProjectPage() {
                 <img
                   src={skillLogo.url}
                   alt={skillLogo.altText}
+                  key={skillLogo.altText}
                   className="project__skill-logo"
                 />
               );
@@ -89,7 +91,7 @@ function SingleProjectPage() {
                 <ul className="project__detail-list">
                   {projectObj.roleList.map((roleListItem) => {
                     return (
-                      <li className="project__detail-list-item">
+                      <li className="project__detail-list-item" key={roleListItem}>
                         {roleListItem}
                       </li>
                     );
@@ -106,7 +108,7 @@ function SingleProjectPage() {
                 <ul className="project__detail-list">
                   {projectObj.nextStepsList.map((step) => {
                     return (
-                      <li className="project__detail-list-item">{step}</li>
+                      <li className="project__detail-list-item" key={step}>{step}</li>
                     );
                   })}
                 </ul>
@@ -114,16 +116,6 @@ function SingleProjectPage() {
             />
           ) : null}
         </AccordionGroup>
-
-        {projectObj.relatedProjectsList ? (
-          <ul className="project__detail-list">
-            {projectObj.relatedProjectsList.map((relatedProject) => {
-              return (
-                <li className="project__detail-list-item">{relatedProject}</li>
-              );
-            })}
-          </ul>
-        ) : null}
         {projectObj.projectURL ? (
           <a
             href={projectObj.projectURL}
@@ -141,6 +133,7 @@ function SingleProjectPage() {
                   href={supportingLink.url}
                   className="button button-alt project__button"
                   target="_blank"
+                  key={supportingLink.url}
                 >
                   {supportingLink.urlName}
                 </a>
@@ -148,6 +141,23 @@ function SingleProjectPage() {
             })}
           </div>
         ) : null}
+        {projectObj.relatedProjectsList ? (
+            <div className="project__related-projects">
+              <h3 className="project__subheading--light">Related Projects</h3>
+              <div className="project__related-projects-container">
+                {projectObj.relatedProjectsList.map((relatedProject) => {
+                  const relatedProjectObj = projectList.find(
+                    (project) => project.id === `${relatedProject.id}`
+                  );
+                  return (
+                      <div className="project__related-project-item">
+                        <RelatedProject data={relatedProjectObj} />
+                      </div>
+                  )
+                })}
+              </div>
+            </div>
+          ) : null}
       </div>
     </section>
   );

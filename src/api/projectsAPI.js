@@ -1,6 +1,8 @@
 import React from "react";
 
 export const projectList = [
+
+  // PORTFOLIO
   {
     id: "portfolio",
     projectName: "Project Portfolio",
@@ -89,12 +91,15 @@ export const projectList = [
       {
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/j5zDOuu3IwN4PzMXIF4SmO/Portfolio",
-      }, {
+      },
+      {
         urlName: "Git Repository",
         url: "https://github.com/stephlyanie/portfolio",
       },
     ],
   },
+
+  // SFU WEBSITE REDESIGN
   {
     id: "sfu-website-redesign",
     projectName: "SFU Centre for Dialogue Website Redesign",
@@ -168,7 +173,14 @@ export const projectList = [
       "Finesse brand narrative content",
       "Develop and maintain a site manual to document processes and rationale",
     ],
-    relatedProjectsList: "",
+    relatedProjectsList: [
+      {
+        id: "portfolio",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
@@ -176,13 +188,16 @@ export const projectList = [
       },
     ],
   },
+
+  // CHALLENGE ACCEPTED APP
   {
     id: "challenge-accepted",
     projectName: "Challenge Accepted App",
     projectURL: "https://github.com/stephlyanie/challenge-accepted-gui",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-ca-website.png"),
-      altText: "Mockup of the home page of Challenge Accepted website on a tablet",
+      altText:
+        "Mockup of the home page of Challenge Accepted website on a tablet",
     },
     status: "Preparing to Launch",
     type: "Personal",
@@ -191,14 +206,14 @@ export const projectList = [
     launchDate: "TBD",
     topSkills: "mySQL | Node JS | React JS",
     skills: [
-      "mySQL", 
-      "Node JS", 
-      "React JS", 
+      "mySQL",
+      "Node JS",
+      "React JS",
       "Express JS",
-      "JavaScript", 
-      "SCSS", 
-      "Joy UI", 
-      "Axios", 
+      "JavaScript",
+      "SCSS",
+      "Joy UI",
+      "Axios",
       "GitHub",
       "HTML",
       "CSS",
@@ -275,28 +290,33 @@ export const projectList = [
       },
       {
         id: "maple-counselling-website",
-      }
+      },
     ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/8TBdU8lM0GM8RrNKSR3Su3/Challenge-Accepted",
-      }, {
+      },
+      {
         urlName: "Git GUI Repository",
         url: "https://github.com/stephlyanie/challenge-accepted-gui",
-      }, {
+      },
+      {
         urlName: "Git API Repository",
         url: "https://github.com/stephlyanie/challenge-accepted-api",
       },
     ],
   },
+
+  // MAPLE COUNSELLING WEBSITE
   {
     id: "maple-counselling-website",
     projectName: "Maple Counselling Website",
     projectURL: "https://www.maplecounselling.ca/",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-mc-website.png"),
-      altText: "Mockup of the home page of Maple Counselling website on a tablet",
+      altText:
+        "Mockup of the home page of Maple Counselling website on a tablet",
     },
     status: "Complete",
     type: "Freelance",
@@ -338,17 +358,21 @@ export const projectList = [
     nextStepsList: "",
     relatedProjectsList: [
       {
-        id: "porfolio",
+        id: "portfolio",
       },
       {
         id: "challenge-accepted",
       },
     ],
     supportingLinksList: [],
-  },{
+  },
+
+  // DEMOCRATIC CHAMPIONS GAME
+  {
     id: "democratic-champions",
     projectName: "Democratic Champions Card Game Design",
-    projectURL: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/democratic-champions-card-game.html ",
+    projectURL:
+      "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/democratic-champions-card-game.html ",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-scd-democratic-champs.png"),
       altText: "Mockup of 18 cards from the Democratic Champions game",
@@ -360,8 +384,8 @@ export const projectList = [
     launchDate: "September 2021",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
-      "Graphic Design", 
-      "Adobe InDesign", 
+      "Graphic Design",
+      "Adobe InDesign",
       "Adobe Illustrator",
       "Client Relations",
       "Greyscale Design",
@@ -380,7 +404,7 @@ export const projectList = [
       "The Strengthening Canadian Democracy Initiative at SFU's Morris J. Wosk Centre for Dialogue created a game to explore how to navigate democracy to inspire change.",
     solution:
       "They contracted me to design the playing cards and instruction sheets. These materials needed to be accessible for folks to download and print in black and white.",
-    roleIntro: 
+    roleIntro:
       "I used Adobe InDesign and Illustrator programs to design the materials and provided printable pdfs to the team.",
     roleList: [
       "Designed five playing card types",
@@ -402,6 +426,8 @@ export const projectList = [
     ],
     supportingLinksList: [],
   },
+
+  // BEING SAFE BEING ME
   {
     id: "saravyc-being-safe-being-me",
     projectName: "Being Safe, Being Me 2019",
@@ -494,7 +520,10 @@ export const projectList = [
         url: "https://youtube.com/playlist?list=PL3AChx0wmhduwl6-oFJ_D7T9VZARb_dyh&si=e9IReQwrNLF-cqDU",
       },
     ],
-  },{
+  },
+
+  // SCD INFOGRAPHICS
+  {
     id: "democracy-infographics",
     projectName: "Strengthening Canadian Democracy Infographics",
     projectURL: "",
@@ -509,8 +538,8 @@ export const projectList = [
     launchDate: "September 2020",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
-      "Graphic Design", 
-      "Adobe InDesign", 
+      "Graphic Design",
+      "Adobe InDesign",
       "Adobe Illustrator",
       "Client Relations",
     ],
@@ -526,9 +555,8 @@ export const projectList = [
     ],
     challenge:
       "The Strengthening Canadian Democracy team at SFU's Morris J. Wosk Centre for Dialogue was looking to mobilize their findings in a visual way.",
-    solution:
-      "They contracted me to design four infographics.",
-    roleIntro: 
+    solution: "They contracted me to design four infographics.",
+    roleIntro:
       "I used Adobe InDesign and Illustrator programs to design the materials and provided digital versions to be displayed on their website. ",
     roleList: [
       "Designed infographics from data provided by the team",
@@ -566,6 +594,8 @@ export const projectList = [
       },
     ],
   },
+
+  // LEGION KEY TAG CAMPAIGN 2020
   {
     id: "legion-key-tag-campaign",
     projectName: "Key Tag Campaign",
@@ -622,6 +652,8 @@ export const projectList = [
     ],
     supportingLinksList: "",
   },
+
+  // OUT AT HOME
   {
     id: "saravyc-out-at-home",
     projectName: "Out at Home",
