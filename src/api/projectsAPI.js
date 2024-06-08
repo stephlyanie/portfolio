@@ -2,7 +2,7 @@ import React from "react";
 
 export const projectList = [
 
-  // PORTFOLIO
+  // PORTFOLIO -- May 2024
   {
     id: "portfolio",
     projectName: "Project Portfolio",
@@ -30,31 +30,31 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/react.jpg"),
+        url: require("../assets/logos/react.png"),
         altText: "React Logo",
       },
       {
-        url: require("../assets/logos/javascript.jpg"),
+        url: require("../assets/logos/javascript.png"),
         altText: "Javascript Logo",
       },
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/sass.jpg"),
+        url: require("../assets/logos/sass.png"),
         altText: "Sass Logo",
       },
       {
-        url: require("../assets/logos/mui.jpg"),
+        url: require("../assets/logos/mui.png"),
         altText: "Material UI Logo",
       },
       {
-        url: require("../assets/logos/github.jpg"),
+        url: require("../assets/logos/github.png"),
         altText: "GitHub Logo",
       },
     ],
@@ -99,7 +99,7 @@ export const projectList = [
     ],
   },
 
-  // SFU WEBSITE REDESIGN
+  // SFU WEBSITE REDESIGN -- Feb 2024
   {
     id: "sfu-website-redesign",
     projectName: "SFU Centre for Dialogue Website Redesign",
@@ -132,15 +132,15 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/w3c.jpg"),
+        url: require("../assets/logos/w3c.png"),
         altText: "W3C Web Standards Logo",
       },
     ],
@@ -175,7 +175,7 @@ export const projectList = [
     ],
     relatedProjectsList: [
       {
-        id: "portfolio",
+        id: "dialogue-podcast",
       },
       {
         id: "challenge-accepted",
@@ -189,7 +189,7 @@ export const projectList = [
     ],
   },
 
-  // CHALLENGE ACCEPTED APP
+  // CHALLENGE ACCEPTED APP -- TBD
   {
     id: "challenge-accepted",
     projectName: "Challenge Accepted App",
@@ -220,47 +220,47 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/react.jpg"),
+        url: require("../assets/logos/react.png"),
         altText: "React Logo",
       },
       {
-        url: require("../assets/logos/node-js.jpg"),
+        url: require("../assets/logos/node-js.png"),
         altText: "Node JS Logo",
       },
       {
-        url: require("../assets/logos/express-js.jpg"),
+        url: require("../assets/logos/express-js.png"),
         altText: "Express JS Logo",
       },
       {
-        url: require("../assets/logos/axios.jpg"),
+        url: require("../assets/logos/axios.png"),
         altText: "Axios Logo",
       },
       {
-        url: require("../assets/logos/mysql.jpg"),
+        url: require("../assets/logos/mysql.png"),
         altText: "mySQL Logo",
       },
       {
-        url: require("../assets/logos/javascript.jpg"),
+        url: require("../assets/logos/javascript.png"),
         altText: "JavaScript Logo",
       },
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/sass.jpg"),
+        url: require("../assets/logos/sass.png"),
         altText: "Sass Logo",
       },
       {
-        url: require("../assets/logos/mui.jpg"),
+        url: require("../assets/logos/mui.png"),
         altText: "Material UI Logo",
       },
       {
-        url: require("../assets/logos/github.jpg"),
+        url: require("../assets/logos/github.png"),
         altText: "GitHub Logo",
       },
     ],
@@ -308,7 +308,57 @@ export const projectList = [
     ],
   },
 
-  // MAPLE COUNSELLING WEBSITE
+  // Talk Dialogue to Me -- Aug 2023
+  {
+    id: "dialogue-podcast",
+    projectName: "Talk Dialogue to Me Podcast",
+    projectURL: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/talk-dialogue-to-me.html",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-dialogue-podcast.png"),
+      altText:
+        "Mockup of the home page of Maple Counselling website on a tablet",
+    },
+    status: "Complete",
+    type: "Employee",
+    client: "Morris J. Wosk Centre for Dialogue",
+    role: "Producer & Project Manager",
+    launchDate: "August 2023",
+    topSkills: "Project Management | Adobe Audition | UI Design",
+    skills: ["Project Management", "Adobe Audition", "UI Design", "Graphic Design", "Leadership", "Brand Narrative", "Storytelling", "Canva"],
+    skillLogos: [
+      {
+        url: require("../assets/logos/audition.png"),
+        altText: "Adobe Audition Logo",
+      },
+      {
+        url: require("../assets/logos/canva.png"),
+        altText: "Canva Logo",
+      },
+    ],
+    challenge:
+      "xx.",
+    solution:
+      "xx.",
+    roleIntro:
+      "xx.",
+    roleList: [
+      "xx",
+    ],
+    outcomes:
+      "xx",
+    nextStepsList: "",
+    relatedProjectsList: [
+      {
+        id: "sfu-website-redesign",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
+    supportingLinksList: [],
+  },
+
+  // MAPLE COUNSELLING WEBSITE -- Mar 2021
   {
     id: "maple-counselling-website",
     projectName: "Maple Counselling Website",
@@ -327,15 +377,15 @@ export const projectList = [
     skills: ["CSS", "HTML", "WordPress", "Client Management"],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
     ],
@@ -392,11 +442,11 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
     ],
@@ -463,27 +513,27 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
       {
-        url: require("../assets/logos/photoshop.jpg"),
+        url: require("../assets/logos/photoshop.png"),
         altText: "Adobe Photoshop Logo",
       },
     ],
@@ -545,11 +595,11 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
     ],
@@ -619,11 +669,11 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
     ],
@@ -689,27 +739,27 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
       {
-        url: require("../assets/logos/photoshop.jpg"),
+        url: require("../assets/logos/photoshop.png"),
         altText: "Adobe Photoshop Logo",
       },
     ],
