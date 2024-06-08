@@ -1,6 +1,8 @@
 import React from "react";
 
 export const projectList = [
+
+  // PORTFOLIO -- May 2024
   {
     id: "portfolio",
     projectName: "Project Portfolio",
@@ -14,9 +16,9 @@ export const projectList = [
     client: "Personal Project",
     role: "Software Developer",
     launchDate: "May 2024",
-    topSkills: "React | JavaScript | Product Design",
+    topSkills: "React JS | JavaScript | Product Design",
     skills: [
-      "React",
+      "React JS",
       "Javascript",
       "SCSS",
       "GitHub",
@@ -28,31 +30,31 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/react.jpg"),
+        url: require("../assets/logos/react.png"),
         altText: "React Logo",
       },
       {
-        url: require("../assets/logos/javascript.jpg"),
+        url: require("../assets/logos/javascript.png"),
         altText: "Javascript Logo",
       },
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/sass.jpg"),
+        url: require("../assets/logos/sass.png"),
         altText: "Sass Logo",
       },
       {
-        url: require("../assets/logos/mui.jpg"),
+        url: require("../assets/logos/mui.png"),
         altText: "Material UI Logo",
       },
       {
-        url: require("../assets/logos/github.jpg"),
+        url: require("../assets/logos/github.png"),
         altText: "GitHub Logo",
       },
     ],
@@ -63,7 +65,7 @@ export const projectList = [
     roleIntro:
       "I worked as the sole creator, designer and developer for this portfolio.",
     roleList: [
-      "Created a SPA using React",
+      "Created a SPA using  JS",
       "Developed a static API in JavaScript",
       "Implemented Joy UI components",
       "Created site mockups using Figma",
@@ -77,17 +79,27 @@ export const projectList = [
       "Add more photos to the project pages",
       "Develop a database in mySQL and implement 'like' functionality",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "sfu-website-redesign",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/j5zDOuu3IwN4PzMXIF4SmO/Portfolio",
-      }, {
+      },
+      {
         urlName: "Git Repository",
         url: "https://github.com/stephlyanie/portfolio",
       },
     ],
   },
+
+  // SFU WEBSITE REDESIGN -- Feb 2024
   {
     id: "sfu-website-redesign",
     projectName: "SFU Centre for Dialogue Website Redesign",
@@ -100,7 +112,7 @@ export const projectList = [
     type: "Employee",
     client: "SFU Morris J. Wosk Centre for Dialogue",
     role: "Product Manager and Designer",
-    launchDate: "Feb. 15, 2024",
+    launchDate: "February 2024",
     topSkills: "HTML | Product Management | UI Design",
     skills: [
       "HTML",
@@ -120,15 +132,15 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/w3c.jpg"),
+        url: require("../assets/logos/w3c.png"),
         altText: "W3C Web Standards Logo",
       },
     ],
@@ -156,12 +168,20 @@ export const projectList = [
     outcomes:
       "The website redesign resulted in clearer understanding of organizational mission and improved access to resources.",
     nextStepsList: [
+      "Next steps have been handed over to the Centre for Dialogue team",
       "Conduct another round of user testing, focusing on the main audience, to gather data on the redesigned site and inform phase two requirements",
       "Research accessibility standards and audit redesigned pages to ensure compliance",
       "Finesse brand narrative content",
       "Develop and maintain a site manual to document processes and rationale",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "dialogue-podcast",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
@@ -169,76 +189,79 @@ export const projectList = [
       },
     ],
   },
+
+  // CHALLENGE ACCEPTED APP -- TBD
   {
     id: "challenge-accepted",
     projectName: "Challenge Accepted App",
     projectURL: "https://github.com/stephlyanie/challenge-accepted-gui",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-ca-website.png"),
-      altText: "Mockup of the home page of Challenge Accepted website on a tablet",
+      altText:
+        "Mockup of the home page of Challenge Accepted website on a tablet",
     },
     status: "Preparing to Launch",
     type: "Personal",
     client: "BrainStation Capstone Project",
     role: "Creator",
     launchDate: "TBD",
-    topSkills: "mySQL | Node JS | React",
+    topSkills: "mySQL | Node JS | React JS",
     skills: [
-      "mySQL", 
-      "Node JS", 
-      "React", 
+      "mySQL",
+      "Node JS",
+      "React JS",
       "Express JS",
-      "JavaScript", 
-      "SCSS", 
-      "Joy UI", 
-      "Axios", 
+      "JavaScript",
+      "SCSS",
+      "Joy UI",
+      "Axios",
       "GitHub",
       "HTML",
       "CSS",
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/react.jpg"),
+        url: require("../assets/logos/react.png"),
         altText: "React Logo",
       },
       {
-        url: require("../assets/logos/node-js.jpg"),
+        url: require("../assets/logos/node-js.png"),
         altText: "Node JS Logo",
       },
       {
-        url: require("../assets/logos/express-js.jpg"),
+        url: require("../assets/logos/express-js.png"),
         altText: "Express JS Logo",
       },
       {
-        url: require("../assets/logos/axios.jpg"),
+        url: require("../assets/logos/axios.png"),
         altText: "Axios Logo",
       },
       {
-        url: require("../assets/logos/mysql.jpg"),
+        url: require("../assets/logos/mysql.png"),
         altText: "mySQL Logo",
       },
       {
-        url: require("../assets/logos/javascript.jpg"),
+        url: require("../assets/logos/javascript.png"),
         altText: "JavaScript Logo",
       },
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/sass.jpg"),
+        url: require("../assets/logos/sass.png"),
         altText: "Sass Logo",
       },
       {
-        url: require("../assets/logos/mui.jpg"),
+        url: require("../assets/logos/mui.png"),
         altText: "Material UI Logo",
       },
       {
-        url: require("../assets/logos/github.jpg"),
+        url: require("../assets/logos/github.png"),
         altText: "GitHub Logo",
       },
     ],
@@ -251,7 +274,7 @@ export const projectList = [
     roleList: [
       "Designed UI using Figma",
       "Developed brand guidelines",
-      "Developed front-end using React",
+      "Developed front-end using React JS",
       "Developed back-end using Node",
       "Created database in mySQL",
     ],
@@ -262,27 +285,105 @@ export const projectList = [
       "Add more categories",
       "Implement more interactivity such as liking and commenting",
     ],
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "portfolio",
+      },
+      {
+        id: "maple-counselling-website",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/8TBdU8lM0GM8RrNKSR3Su3/Challenge-Accepted",
-      }, {
+      },
+      {
         urlName: "Git GUI Repository",
         url: "https://github.com/stephlyanie/challenge-accepted-gui",
-      }, {
+      },
+      {
         urlName: "Git API Repository",
         url: "https://github.com/stephlyanie/challenge-accepted-api",
       },
     ],
   },
+
+  // Talk Dialogue to Me -- Aug 2023
+  {
+    id: "dialogue-podcast",
+    projectName: "Talk Dialogue to Me Podcast",
+    projectURL: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/talk-dialogue-to-me.html",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-dialogue-podcast.png"),
+      altText:
+        "Mockup of the home page of Maple Counselling website on a tablet",
+    },
+    status: "Complete",
+    type: "Employee",
+    client: "Morris J. Wosk Centre for Dialogue",
+    role: "Producer & Project Manager",
+    launchDate: "August 2023",
+    topSkills: "Project Management | Adobe Audition | UI Design",
+    skills: ["Project Management", "Adobe Audition", "UI Design", "Graphic Design", "Leadership", "Brand Narrative", "Storytelling", "Canva"],
+    skillLogos: [
+      {
+        url: require("../assets/logos/audition.png"),
+        altText: "Adobe Audition Logo",
+      },
+      {
+        url: require("../assets/logos/canva.png"),
+        altText: "Canva Logo",
+      },
+    ],
+    challenge:
+      "At SFU's Morris J. Wosk Centre for Dialogue, we wanted to showcase the depth and breadth of impact dialogue can have as well as its varied definitions among those who faciliate it.",
+    solution:
+      "As a collaboration between the communications and knowledge & practice teams, we created the Talk Dialogue to Me podcast.",
+    roleIntro:
+      "My role was to project manage and act as executive producer. I also edited audio and designed landing pages.",
+    roleList: [
+      "Facilitated visioning for the podcast",
+      "Created a project framework and timeline for season one",
+      "Delegated tasks and reviewed all materials",
+      "Brainstormed podcast names and ultimately came up with the winning name—Talk Dialogue to Me",
+      "Designed the SFU website landing page layouts",
+      "Co-developed the theme for season one",
+      "Recruited the host and interviewees for season one",
+      "Edited and exported audio for season one episodes",
+      "Uploaded all season one content to Podbean",
+      "Created and executed a launch strategy for the pilot episode and season one",
+    ],
+    outcomes:
+      "The podcast received glowing reviews from members of our network and supported our larger strategy of increasing visibility and understanding of our organization's mission.",
+    nextStepsList: [
+      "Season two planning is underway and is now in the hands of the Centre for Dialogue team",
+    ],
+    relatedProjectsList: [
+      {
+        id: "sfu-website-redesign",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
+    supportingLinksList: [
+      {
+        urlName: "Podbean",
+        url: "https://talkdialoguetome.podbean.com/",
+      },
+    ],
+  },
+
+  // MAPLE COUNSELLING WEBSITE -- Mar 2021
   {
     id: "maple-counselling-website",
     projectName: "Maple Counselling Website",
     projectURL: "https://www.maplecounselling.ca/",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-mc-website.png"),
-      altText: "Mockup of the home page of Maple Counselling website on a tablet",
+      altText:
+        "Mockup of the home page of Maple Counselling website on a tablet",
     },
     status: "Complete",
     type: "Freelance",
@@ -293,15 +394,15 @@ export const projectList = [
     skills: ["CSS", "HTML", "WordPress", "Client Management"],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
     ],
@@ -322,12 +423,23 @@ export const projectList = [
     outcomes:
       "The site was successfully launched and continues to contribute to the client's successful counselling practice.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "portfolio",
+      },
+      {
+        id: "challenge-accepted",
+      },
+    ],
     supportingLinksList: [],
-  },{
+  },
+
+  // DEMOCRATIC CHAMPIONS GAME
+  {
     id: "democratic-champions",
     projectName: "Democratic Champions Card Game Design",
-    projectURL: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/democratic-champions-card-game.html ",
+    projectURL:
+      "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/democratic-champions-card-game.html ",
     thumbnail: {
       url: require("../assets/images/portfolio-tb-scd-democratic-champs.png"),
       altText: "Mockup of 18 cards from the Democratic Champions game",
@@ -336,22 +448,22 @@ export const projectList = [
     type: "Freelance",
     client: "SFU's Strengthening Canadian Democracy Initiative",
     role: "Graphic Designer",
-    launchDate: "Sep 2021",
+    launchDate: "September 2021",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
-      "Graphic Design", 
-      "Adobe InDesign", 
+      "Graphic Design",
+      "Adobe InDesign",
       "Adobe Illustrator",
       "Client Relations",
       "Greyscale Design",
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
     ],
@@ -359,7 +471,7 @@ export const projectList = [
       "The Strengthening Canadian Democracy Initiative at SFU's Morris J. Wosk Centre for Dialogue created a game to explore how to navigate democracy to inspire change.",
     solution:
       "They contracted me to design the playing cards and instruction sheets. These materials needed to be accessible for folks to download and print in black and white.",
-    roleIntro: 
+    roleIntro:
       "I used Adobe InDesign and Illustrator programs to design the materials and provided printable pdfs to the team.",
     roleList: [
       "Designed five playing card types",
@@ -371,9 +483,18 @@ export const projectList = [
     outcomes:
       "The game was piloted by community groups in Kelowna, by SFU students, and in private homes and received positive reviews.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "democracy-infographics",
+      },
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+    ],
     supportingLinksList: [],
   },
+
+  // BEING SAFE BEING ME
   {
     id: "saravyc-being-safe-being-me",
     projectName: "Being Safe, Being Me 2019",
@@ -386,7 +507,7 @@ export const projectList = [
     type: "Employee",
     client: "SARAVYC at UBC",
     role: "Designer and Writer",
-    launchDate: "Nov. 16, 2020",
+    launchDate: "November 2020",
     topSkills: "CSS | UI Design | Graphic Design",
     skills: [
       "CSS",
@@ -409,27 +530,27 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
       {
-        url: require("../assets/logos/photoshop.jpg"),
+        url: require("../assets/logos/photoshop.png"),
         altText: "Adobe Photoshop Logo",
       },
     ],
@@ -452,14 +573,24 @@ export const projectList = [
     ],
     outcomes: "The report was launched in November 2020.",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "saravyc-out-at-home",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Video Series",
         url: "https://youtube.com/playlist?list=PL3AChx0wmhduwl6-oFJ_D7T9VZARb_dyh&si=e9IReQwrNLF-cqDU",
       },
     ],
-  },{
+  },
+
+  // SCD INFOGRAPHICS
+  {
     id: "democracy-infographics",
     projectName: "Strengthening Canadian Democracy Infographics",
     projectURL: "",
@@ -471,29 +602,28 @@ export const projectList = [
     type: "Freelance",
     client: "SFU's Strengthening Canadian Democracy Initiative",
     role: "Graphic Designer",
-    launchDate: "Sep 2020",
+    launchDate: "September 2020",
     topSkills: "Graphic Design | Adobe InDesign | Adobe Illustrator",
     skills: [
-      "Graphic Design", 
-      "Adobe InDesign", 
+      "Graphic Design",
+      "Adobe InDesign",
       "Adobe Illustrator",
       "Client Relations",
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
     ],
     challenge:
       "The Strengthening Canadian Democracy team at SFU's Morris J. Wosk Centre for Dialogue was looking to mobilize their findings in a visual way.",
-    solution:
-      "They contracted me to design four infographics.",
-    roleIntro: 
+    solution: "They contracted me to design four infographics.",
+    roleIntro:
       "I used Adobe InDesign and Illustrator programs to design the materials and provided digital versions to be displayed on their website. ",
     roleList: [
       "Designed infographics from data provided by the team",
@@ -504,7 +634,14 @@ export const projectList = [
     outcomes:
       "The infographics were published on their website and helped to bring greater understanding to the findings from their work. ",
     nextStepsList: "",
-    relatedProjectsList: [],
+    relatedProjectsList: [
+      {
+        id: "democratic-champions",
+      },
+      {
+        id: "legion-key-tag-campaign",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Semester in Democracy Report Card",
@@ -524,6 +661,66 @@ export const projectList = [
       },
     ],
   },
+
+  // LEGION KEY TAG CAMPAIGN 2020
+  {
+    id: "legion-key-tag-campaign",
+    projectName: "Key Tag Campaign",
+    projectURL: "",
+    thumbnail: {
+      url: require("../assets/images/portfolio-tb-key-chain.png"),
+      altText: "Mockup of three key chain designs",
+    },
+    status: "Launched",
+    type: "Freelance",
+    client: "Legion Foundation",
+    role: "Designer & Writer",
+    launchDate: "August 2020",
+    topSkills: "Graphic Design | Adobe Illustrator | Fundraising",
+    skills: [
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "Fundraising",
+      "Graphic Design",
+      "Writing",
+    ],
+    skillLogos: [
+      {
+        url: require("../assets/logos/illustrator.png"),
+        altText: "Adobe Illustrator Logo",
+      },
+      {
+        url: require("../assets/logos/indesign.png"),
+        altText: "Adobe InDesign Logo",
+      },
+    ],
+    challenge:
+      "Each year, the Legion Foundation raises funds for their veteran programs through a key chain campaign.",
+    solution:
+      "After writing the fundraising letter their 2019 campaign, they contacted me to support their 2020 campaign.",
+    roleIntro:
+      "I designed the 2020 key chains and and wrote the fundraising letter.",
+    roleList: [
+      "Met with the clients to gather scope requirements",
+      "Interviewed a veteran and included their story in the fundraising letter",
+      "Designed the layout for the fundraising letter using Adobe InDesign",
+      "Designed three key chains using Adobe Illustrator",
+    ],
+    outcomes:
+      "The key tags contributed to the Legion Foundation's successful fundraising.",
+    nextStepsList: "",
+    relatedProjectsList: [
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
+    supportingLinksList: "",
+  },
+
+  // OUT AT HOME
   {
     id: "saravyc-out-at-home",
     projectName: "Out at Home",
@@ -536,7 +733,7 @@ export const projectList = [
     type: "Employee",
     client: "SARAVYC at UBC",
     role: "Designer and Writer",
-    launchDate: "Oct 2019",
+    launchDate: "October 2019",
     topSkills: "CSS | UI Design | Graphic Design",
     skills: [
       "CSS",
@@ -559,27 +756,27 @@ export const projectList = [
     ],
     skillLogos: [
       {
-        url: require("../assets/logos/html.jpg"),
+        url: require("../assets/logos/html.png"),
         altText: "HTML Logo",
       },
       {
-        url: require("../assets/logos/css.jpg"),
+        url: require("../assets/logos/css.png"),
         altText: "CSS Logo",
       },
       {
-        url: require("../assets/logos/wordpress.jpg"),
+        url: require("../assets/logos/wordpress.png"),
         altText: "WordPress Logo",
       },
       {
-        url: require("../assets/logos/indesign.jpg"),
+        url: require("../assets/logos/indesign.png"),
         altText: "Adobe InDesign Logo",
       },
       {
-        url: require("../assets/logos/illustrator.jpg"),
+        url: require("../assets/logos/illustrator.png"),
         altText: "Adobe Illustrator Logo",
       },
       {
-        url: require("../assets/logos/photoshop.jpg"),
+        url: require("../assets/logos/photoshop.png"),
         altText: "Adobe Photoshop Logo",
       },
     ],
@@ -601,8 +798,15 @@ export const projectList = [
     ],
     outcomes:
       "he materials were launched in October 2019. One of the collaborating researchers shared with me that this was the first time they'd seen supportive, research-based resources for LGBTQ+ youth written in their native language.",
-    nextStepsList: [],
-    relatedProjectsList: [],
+    nextStepsList: "",
+    relatedProjectsList: [
+      {
+        id: "saravyc-being-safe-being-me",
+      },
+      {
+        id: "democratic-champions",
+      },
+    ],
     supportingLinksList: [
       {
         urlName: "Video Series",
