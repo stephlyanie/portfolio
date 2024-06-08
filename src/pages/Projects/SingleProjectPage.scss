@@ -23,6 +23,14 @@
         font-size: 1rem;
         color:$text-secondary-dark;
         text-transform: uppercase;
+
+        &--light {
+            color: $text-primary-light;
+
+            @include desktop {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     &__detail {
@@ -84,6 +92,31 @@
         height: 50px;
         width: auto;
         padding-right: .5rem;
+    }
+
+    &__related-projects {
+        margin-top: 2rem;
+        background-color: $bg-featured-dark;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        text-align: center;
+
+        @include desktop {
+            text-align: left;
+        }
+    }
+
+    &__related-project-item {
+        margin: 1rem 0;
+        border-radius: 1rem;
+        border: solid 2px $border-primary-light;
+        padding: 1rem 0;
+
+        @include desktop {
+            border: none;
+            border-radius: 0;
+            border-top: solid 1px $border-primary-light;
+        }
     }
 
     @include tablet {
