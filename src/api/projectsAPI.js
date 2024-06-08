@@ -168,6 +168,7 @@ export const projectList = [
     outcomes:
       "The website redesign resulted in clearer understanding of organizational mission and improved access to resources.",
     nextStepsList: [
+      "Next steps have been handed over to the Centre for Dialogue team",
       "Conduct another round of user testing, focusing on the main audience, to gather data on the redesigned site and inform phase two requirements",
       "Research accessibility standards and audit redesigned pages to ensure compliance",
       "Finesse brand narrative content",
@@ -336,17 +337,28 @@ export const projectList = [
       },
     ],
     challenge:
-      "xx.",
+      "At SFU's Morris J. Wosk Centre for Dialogue, we wanted to showcase the depth and breadth of impact dialogue can have as well as its varied definitions among those who faciliate it.",
     solution:
-      "xx.",
+      "As a collaboration between the communications and knowledge & practice teams, we created the Talk Dialogue to Me podcast.",
     roleIntro:
-      "xx.",
+      "My role was to project manage and act as executive producer. I also edited audio and designed landing pages.",
     roleList: [
-      "xx",
+      "Facilitated visioning for the podcast",
+      "Created a project framework and timeline for season one",
+      "Delegated tasks and reviewed all materials before publication",
+      "Brainstormed podcast names and ultimately came up with the winning name—Talk Dialogue to Me",
+      "Designed the SFU website landing page layouts",
+      "Co-developed the theme for season one",
+      "Recruited the host and interviewees for season one",
+      "Edited and exported audio for season one episodes",
+      "Uploaded all season one content to Podbean",
+      "Created and executed a launch strategy for the pilot episode and season one",
     ],
     outcomes:
-      "xx",
-    nextStepsList: "",
+      "The podcast received glowing reviews from members of our network and supported our larger strategy of increasing visibility and understanding of our organization's mission.",
+    nextStepsList: [
+      "Season two planning is underway and is now in the hands of the Centre for Dialogue team",
+    ],
     relatedProjectsList: [
       {
         id: "sfu-website-redesign",
@@ -355,7 +367,12 @@ export const projectList = [
         id: "challenge-accepted",
       },
     ],
-    supportingLinksList: [],
+    supportingLinksList: [
+      {
+        urlName: "Podbean",
+        url: "https://talkdialoguetome.podbean.com/",
+      },
+    ],
   },
 
   // MAPLE COUNSELLING WEBSITE -- Mar 2021
