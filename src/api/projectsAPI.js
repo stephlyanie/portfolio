@@ -97,6 +97,9 @@ export const projectList = [
         url: "https://github.com/stephlyanie/portfolio",
       },
     ],
+    filterList: [
+      "code",
+    ],
   },
 
   // SFU WEBSITE REDESIGN -- Feb 2024
@@ -187,6 +190,9 @@ export const projectList = [
         urlName: "Figma Wireframes",
         url: "https://www.figma.com/design/FGzXzHSoMXff4taUFWdWWN/CLF4-Redesign",
       },
+    ],
+    filterList: [
+      "code", "design", "writing", "communications"
     ],
   },
 
@@ -307,6 +313,9 @@ export const projectList = [
         url: "https://github.com/stephlyanie/challenge-accepted-api",
       },
     ],
+    filterList: [
+      "code"
+    ],
   },
 
   // Talk Dialogue to Me -- Aug 2023
@@ -373,6 +382,9 @@ export const projectList = [
         url: "https://talkdialoguetome.podbean.com/",
       },
     ],
+    filterList: [
+      "design", "writing", "communications"
+    ],
   },
 
   // MAPLE COUNSELLING WEBSITE -- Mar 2021
@@ -432,6 +444,9 @@ export const projectList = [
       },
     ],
     supportingLinksList: [],
+    filterList: [
+      "code", "design"
+    ],
   },
 
   // DEMOCRATIC CHAMPIONS GAME
@@ -492,6 +507,9 @@ export const projectList = [
       },
     ],
     supportingLinksList: [],
+    filterList: [
+      "design"
+    ],
   },
 
   // BEING SAFE BEING ME
@@ -587,6 +605,9 @@ export const projectList = [
         url: "https://youtube.com/playlist?list=PL3AChx0wmhduwl6-oFJ_D7T9VZARb_dyh&si=e9IReQwrNLF-cqDU",
       },
     ],
+    filterList: [
+      "design", "writing", "communications"
+    ],
   },
 
   // SCD INFOGRAPHICS
@@ -660,6 +681,9 @@ export const projectList = [
         url: "https://www.sfu.ca/dialogue/what-we-do/knowledge-practice/strengthening-canadian-democracy/neighbourhood-small-grants/4-attributes-that-motivate-people.html",
       },
     ],
+    filterList: [
+      "design"
+    ],
   },
 
   // LEGION KEY TAG CAMPAIGN 2020
@@ -718,6 +742,9 @@ export const projectList = [
       },
     ],
     supportingLinksList: "",
+    filterList: [
+      "design", "writing"
+    ],
   },
 
   // OUT AT HOME
@@ -812,6 +839,9 @@ export const projectList = [
         urlName: "Video Series",
         url: "https://youtube.com/playlist?list=PL3AChx0wmhdveqMFvHbgxdeLPhVGtsuMV&si=fgQywL-qXrnz1giS",
       },
+    ],
+    filterList: [
+      "design", "writing", "communications"
     ],
   },
 ];

@@ -1,0 +1,30 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.projects {
+
+    &__title {
+        font-size: 1.75rem;
+        margin: 1rem 0;
+        text-align: center;
+
+        @include desktop {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+
+    &__container {
+        @include tablet {
+            @include flex(space-between);
+            flex-wrap: wrap;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @include desktop {
+            padding: 0 5rem;
+        }
+    } 
+}
