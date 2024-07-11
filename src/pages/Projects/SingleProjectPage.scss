@@ -1,6 +1,6 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
-
+ 
 .project {
     margin: 1rem;
 
@@ -17,6 +17,18 @@
     &__heading {
         font-size: 1.125rem;
         margin-bottom: 1rem;
+    }
+
+    &__details {
+        margin: 0 0.5rem;
+
+        @include tablet {
+            margin: 0 2.5rem;
+        }
+
+        @include desktop {
+            margin: 2rem 5rem;
+        }
     }
 
     &__subheading {
@@ -58,8 +70,29 @@
         }
     }
 
+    &__accordion {
+        @include tablet {
+            margin: 2rem 2.5rem;
+
+        }
+
+        @include desktop {
+            margin: 2rem 5rem;
+        }
+    }
+
     &__button {
         margin-bottom: 1rem;
+
+        @include tablet {
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        @include desktop {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
     }
 
     &__skill-list {
@@ -96,8 +129,7 @@
 
     &__related-projects {
         margin-top: 2rem;
-        background-color: $bg-featured-dark;
-        border-radius: 1rem;
+        border-top: solid 2px $border-featured;
         padding: 1.5rem;
         text-align: center;
 
@@ -120,16 +152,11 @@
     }
 
     @include tablet {
-        @include flex(space-between);
         margin: 2rem 4rem;
-        max-width: 1450px;
-
-        &__section {
-            width: 48%;
-        }
-    
-        &__image {
-            width: 100%;
-        }
     }  
+
+    @include desktop {
+        margin: 4rem 10rem;
+        max-width: 1450px;
+    }
 }
