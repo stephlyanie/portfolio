@@ -16,10 +16,8 @@ function HomePage() {
         />
         <p className="hero__intro">
           I’m Stephanie — <br></br>
-          <span className="hero__intro--bold">designer</span> and{" "}
-          <span className="hero__intro--bold">developer</span> <br></br>
-          with project management <br></br>
-          and writing acumen.
+          I <span className="hero__intro--bold">design</span>. I <span className="hero__intro--bold">code</span>. I <span className="hero__intro--bold">write</span>.<br></br>
+          I do communications.
         </p>
       </section>
       <section className="work">

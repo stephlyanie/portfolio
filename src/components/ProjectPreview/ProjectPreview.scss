@@ -2,53 +2,54 @@
 @use "../../styles/variables" as *;
 
 .project-preview {
-    border-top: solid 1px $border-primary-light;
-    padding: 1rem 2rem 1.5rem;
-    margin: 1rem auto;
+    border: solid 1px $border-secondary-light;
+    border-radius: 1.5rem;
+    padding: 1rem 1.25rem 1.25rem;
+    margin: 1rem;
     text-align: center;
-
-    @include desktop {
-        border-top: none;
-        padding: 1rem 0 1.5rem;
-        width: 50%;
-    }
-
 
     &__img {
         margin: 0 auto;
-        width: 75%;
+        width: 100%;
         height: auto;
-
-        &:hover {
-            opacity: 0.75;
-        }
-
-        @include desktop {
-            width: 100%;
-        }
     }
 
     &__title {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         padding: .5rem 0 0;
+        color: $text-secondary-dark;
 
-        @include desktop {
-            font-size: 1.75rem;
+        @include tablet {
+            font-size: 1.625rem;
             padding: 1rem 0 .5rem;
         }
     }
 
     &__skills {
-        font-size: .75rem;
+        font-size: 1rem;
 
-        @include desktop {
-            font-size: 1.25rem;
+        @include tablet {
+            font-size: 1.125rem;
         }
     }
 
     &__btn {
-        max-width: 300px;
         padding: .75rem 1rem;
         width: 95%;
+        margin-top: 1rem;
+
+        @include tablet {
+            width: 95%;
+        }
+    }
+
+    @include tablet {
+        width: 45%;
+        @include flex(space-between);
+        flex-direction: column;
+    }
+
+    @include desktop {
+        width: 30%;
     }
 }

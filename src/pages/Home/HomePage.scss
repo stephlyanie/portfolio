@@ -31,12 +31,12 @@
             font-size: 1.375rem;
             font-weight: bold;
 
-            @include desktop {
+            @include tablet {
                 font-size: 2rem;
             }
         }
 
-        @include desktop {
+        @include tablet {
             font-size: 1.75rem;
         }
     }
@@ -60,11 +60,16 @@
     }
 
     &__projects-container {
-        @include desktop {
-            @include flex;
+        @include tablet {
+            @include flex(space-between);
             flex-wrap: wrap;
             max-width: 1500px;
             margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @include desktop {
+            padding: 0 5rem;
         }
     } 
 }
