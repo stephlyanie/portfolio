@@ -1,5 +1,7 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+@use "../../App.scss" as *;
+
 
 .projects {
 
@@ -11,6 +13,23 @@
         @include desktop {
             font-size: 2rem;
             margin: 2rem 0;
+        }
+    }
+
+    &__filters {
+        @include flex(center);
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    &__filter-button {
+        @extend .button;
+        @extend .button__alt;
+
+        margin-bottom: 0.5rem;
+        
+        &--active {
+            background-color: $bg-btn-featured;
         }
     }
 

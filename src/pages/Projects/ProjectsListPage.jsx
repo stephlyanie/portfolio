@@ -10,8 +10,8 @@ function ProjectsListPage() {
   window.scrollTo(0, 0);
   // Stores the classes for active and inactive buttons
   const activeButtonClass =
-    "button button__alt projects__filter-button projects__filter-button--active";
-  const inactiveButtonClass = "button button__alt projects__filter-button";
+    "projects__filter-button projects__filter-button--active";
+  const inactiveButtonClass = "projects__filter-button";
 
   const [filteredProjects, setFilteredProjects] = useState(projectList);
   const [activeFilter, setActiveFilter] = useState("all");
@@ -137,7 +137,7 @@ function ProjectsListPage() {
     <section className="projects">
       <h2 className="projects__title">Recent Work</h2>
       <div className="projects__filters">
-        <button
+        <button 
           id="filter-all"
           className={allFilterClass}
           onClick={handleAllFilter}
