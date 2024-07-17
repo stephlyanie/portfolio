@@ -1,0 +1,19 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.menu-drawer {
+    &__open-nav-button {
+        background-color: transparent;
+        border: none;
+    }
+
+    &__drawer {
+        background-color: $bg-primary-light;
+    }
+
+    &__nav-item-text {
+        font-family: 'Atkinson Hyperlegible', Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        color: $text-primary-dark;
+    }
+}
