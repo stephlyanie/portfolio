@@ -34,7 +34,7 @@ function MenuDrawer() {
     },
     {
       name: "Projects",
-      icon: <AutoAwesome className="menu__nav-item-icon" sx={{fill: "#6a6282"}} />,
+      icon: <AutoAwesome className="menu__nav-item-icon" sx={{fill: "#6a6282"}} initialFilter={`all`} />,
       url: "/projects",
     },
     {

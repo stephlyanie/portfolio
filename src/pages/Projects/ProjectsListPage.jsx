@@ -1,20 +1,35 @@
 // Styles
 import "./ProjectsListPage.scss";
 import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
 import { projectList } from "../../api/projectsAPI";
 
-function ProjectsListPage() {
+function ProjectsListPage({ initialFilter }) {
   // Scrolls page to top on load
   window.scrollTo(0, 0);
+
+  // Sets initialFilter if filterToApply exists on page load
+  const location = useLocation();
+  const { filterToApply } = location.state;
+  if (filterToApply) {
+    initialFilter = filterToApply;
+  }
+
+  // Sets initialFilter to all if no initialFilter exists on page load
+  if (!initialFilter) {
+    initialFilter = "all";
+  }
+
   // Stores the classes for active and inactive buttons
   const activeButtonClass =
     "projects__filter-button projects__filter-button--active";
   const inactiveButtonClass = "projects__filter-button";
 
+  // States
   const [filteredProjects, setFilteredProjects] = useState(projectList);
-  const [activeFilter, setActiveFilter] = useState("all");
+  const [activeFilter, setActiveFilter] = useState(initialFilter);
   const [allFilterClass, setAllFilterClass] = useState(activeButtonClass);
   const [codeFilterClass, setCodeFilterClass] = useState(inactiveButtonClass);
   const [designFilterClass, setDesignFilterClass] =
@@ -23,6 +38,48 @@ function ProjectsListPage() {
     useState(inactiveButtonClass);
   const [communicationsFilterClass, setCommunicationsFilterClass] =
     useState(inactiveButtonClass);
+
+  // Listens for filterToApply on page load and sets initialFilter accordingly
+  useEffect(() => {
+    if (filterToApply) {
+      initialFilter = filterToApply;
+    }
+    // Sets button styles for code projects
+    if (filterToApply === "code") {
+      setAllFilterClass(inactiveButtonClass);
+      setCodeFilterClass(activeButtonClass);
+      setDesignFilterClass(inactiveButtonClass);
+      setWritingFilterClass(inactiveButtonClass);
+      setCommunicationsFilterClass(inactiveButtonClass);
+    }
+
+    // Sets button styles for design projects
+    if (filterToApply === "design") {
+      setAllFilterClass(inactiveButtonClass);
+      setCodeFilterClass(inactiveButtonClass);
+      setDesignFilterClass(activeButtonClass);
+      setWritingFilterClass(inactiveButtonClass);
+      setCommunicationsFilterClass(inactiveButtonClass);
+    }
+
+    // Sets button styles for writing projects
+    if (filterToApply === "writing") {
+      setAllFilterClass(inactiveButtonClass);
+      setCodeFilterClass(inactiveButtonClass);
+      setDesignFilterClass(inactiveButtonClass);
+      setWritingFilterClass(activeButtonClass);
+      setCommunicationsFilterClass(inactiveButtonClass);
+    }
+
+    // Sets button styles for communications projects
+    if (filterToApply === "communications") {
+      setAllFilterClass(inactiveButtonClass);
+      setCodeFilterClass(inactiveButtonClass);
+      setDesignFilterClass(inactiveButtonClass);
+      setWritingFilterClass(inactiveButtonClass);
+      setCommunicationsFilterClass(activeButtonClass);
+    }
+  }, []);
 
   // Listens for changes to activeTab and sets filteredProjects accordingly
   useEffect(() => {
@@ -137,7 +194,7 @@ function ProjectsListPage() {
     <section className="projects">
       <h2 className="projects__title">Recent Work</h2>
       <div className="projects__filters">
-        <button 
+        <button
           id="filter-all"
           className={allFilterClass}
           onClick={handleAllFilter}
