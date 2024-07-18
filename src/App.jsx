@@ -18,7 +18,6 @@ function App() {
           {/* ROOT ROUTE */}
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/projects" element={<ProjectsListPage />}></Route>
-          <Route path="/projects/code" element={<Navigate to="/" initialFilter="code" />}></Route>
           <Route path="/projects/:projectPageId" element={<SingleProjectPage />}></Route>
         </Routes>
         <Footer />

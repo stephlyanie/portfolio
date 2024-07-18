@@ -4,7 +4,7 @@ import { projectList } from "../../api/projectsAPI";
 import { useParams, Link } from "react-router-dom";
 
 import AccordionItem from "../../components/AccordionItem/AccordionItem";
-import RelatedProject from "../../components/RelatedProject/RelatedProject";
+import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
 
 import AccordionGroup from "@mui/joy/AccordionGroup";
 
@@ -156,16 +156,14 @@ function SingleProjectPage() {
       ) : null}
       {projectObj.relatedProjectsList ? (
         <div className="project__related-projects">
-          <h3 className="project__subheading--light">Related Projects</h3>
+          <h3 className="project__related-projects-heading">Related Projects</h3>
           <div className="project__related-projects-container">
             {projectObj.relatedProjectsList.map((relatedProject) => {
               const relatedProjectObj = projectList.find(
                 (project) => project.id === `${relatedProject.id}`
               );
               return (
-                <div className="project__related-project-item">
-                  <RelatedProject data={relatedProjectObj} />
-                </div>
+                  <ProjectPreview data={relatedProjectObj} />
               );
             })}
           </div>

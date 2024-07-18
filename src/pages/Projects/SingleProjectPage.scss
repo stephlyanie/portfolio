@@ -129,25 +129,27 @@
 
     &__related-projects {
         margin-top: 2rem;
+        padding-top: 2rem;
         border-top: solid 2px $border-featured;
-        padding: 1.5rem;
         text-align: center;
 
-        @include desktop {
+        @include tablet {
             text-align: left;
         }
     }
 
-    &__related-project-item {
-        margin: 1rem 0;
-        border-radius: 1rem;
-        border: solid 2px $border-primary-light;
-        padding: 1rem 0;
+    &__related-projects-heading {
+        @extend .project__title;
 
-        @include desktop {
-            border: none;
-            border-radius: 0;
-            border-top: solid 1px $border-primary-light;
+
+        @include tablet {
+            padding-left: 1rem;
+        }
+    }
+
+    &__related-projects-container {
+        @include tablet {
+            @include flex;
         }
     }
 

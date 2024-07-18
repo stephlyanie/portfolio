@@ -37,11 +37,11 @@ function MenuDrawer() {
       icon: <AutoAwesome className="menu__nav-item-icon" sx={{fill: "#6a6282"}} initialFilter={`all`} />,
       url: "/projects",
     },
-    {
-      name: "Bio",
-      icon: <SentimentVerySatisfied className="menu__nav-item-icon" sx={{fill: "#6a6282"}} />,
-      url: "/bio",
-    },
+    // {
+    //   name: "Bio",
+    //   icon: <SentimentVerySatisfied className="menu__nav-item-icon" sx={{fill: "#6a6282"}} />,
+    //   url: "/bio",
+    // },
   ];
 
   return (

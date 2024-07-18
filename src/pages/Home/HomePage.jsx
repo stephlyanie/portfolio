@@ -6,6 +6,8 @@ import { projectList } from "../../api/projectsAPI";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
+import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
+
 function HomePage() {
   // Scrolls page to top on load
   window.scrollTo(0, 0);
@@ -26,6 +28,7 @@ function HomePage() {
           <span className="hero__intro--bold">write</span>.<br></br>I do
           communications.
         </p>
+        <ArrowDropDown sx={{fill: "#fdfdff"}} />
       </section>
       <section className="filters">
         <div className="filters__triangle-up"></div>

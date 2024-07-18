@@ -11,7 +11,7 @@ function ProjectPreview({ data }) {
           <h3 className="project-preview__title">{data.projectName}</h3>
           <p className="project-preview__skills">{data.topSkills}</p>
         </div>
-        <Link to={`/${data.id}/`}>
+        <Link to={`/projects/${data.id}/`}>
           <div className="button project-preview__btn">
             Learn More
           </div>

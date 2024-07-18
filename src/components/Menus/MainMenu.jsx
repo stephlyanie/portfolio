@@ -18,14 +18,14 @@ function MainMenu() {
         >
           Projects
         </li>
-        <li
+        {/* <li
           className="menu__link"
           onClick={() => {
             navigate(`/bio`);
           }}
         >
             Bio
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
