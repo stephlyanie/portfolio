@@ -71,6 +71,9 @@ function HomePage() {
               return <ProjectPreview data={project} />;
             })}
         </div>
+        <Link to="/projects" className="work__button">
+          <p>Explore More</p>
+        </Link>
       </section>
     </section>
   );

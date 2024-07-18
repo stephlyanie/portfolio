@@ -96,14 +96,15 @@
 
 .work {
 
+    padding: 0 1rem;
+
     &__title {
         font-size: 1.75rem;
-        margin: 1rem 0;
         text-align: center;
 
         @include desktop {
             font-size: 2rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
         }
     }
 
@@ -113,11 +114,19 @@
             flex-wrap: wrap;
             max-width: 1500px;
             margin: 0 auto;
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
 
         @include desktop {
-            padding: 0 5rem;
+            padding: 0 4rem;
+            flex-wrap: nowrap;
         }
     } 
+
+    &__button {
+        @extend .button;
+        @extend .button__featured;
+        margin: 1rem auto;
+        display: block;
+    }
 }
