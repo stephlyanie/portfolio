@@ -1,0 +1,49 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+@use "../../App.scss" as *;
+
+
+.projects {
+
+    &__title {
+        font-size: 1.75rem;
+        margin: 1rem 0;
+        text-align: center;
+
+        @include desktop {
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+    }
+
+    &__filters {
+        @include flex(center);
+        flex-wrap: wrap;
+        margin: 1rem;
+    }
+
+    &__filter-button {
+        @extend .button;
+        @extend .button__alt;
+
+        margin-bottom: 0.5rem;
+        
+        &--active {
+            background-color: $bg-btn-featured;
+        }
+    }
+
+    &__container {
+        @include tablet {
+            @include flex(space-between);
+            flex-wrap: wrap;
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        @include desktop {
+            padding: 0 5rem;
+        }
+    } 
+}

@@ -1,0 +1,27 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.menu {
+
+    &__list {
+        @include flex;
+        list-style-type: none;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+
+    &__link {
+        color: $text-primary-light;
+        font-weight: bold;
+        font-size: 1.125rem;
+        margin-left: 2rem;
+
+        &:hover {
+            color: $text-secondary-light;
+        }
+
+        &--active {
+            color: $text-secondary-light;
+        }
+    }
+}

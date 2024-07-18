@@ -1,6 +1,6 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
-
+ 
 .project {
     margin: 1rem;
 
@@ -17,6 +17,18 @@
     &__heading {
         font-size: 1.125rem;
         margin-bottom: 1rem;
+    }
+
+    &__details {
+        margin: 0 0.5rem;
+
+        @include tablet {
+            margin: 0 2.5rem;
+        }
+
+        @include desktop {
+            margin: 2rem 5rem;
+        }
     }
 
     &__subheading {
@@ -58,8 +70,29 @@
         }
     }
 
+    &__accordion {
+        @include tablet {
+            margin: 2rem 2.5rem;
+
+        }
+
+        @include desktop {
+            margin: 2rem 5rem;
+        }
+    }
+
     &__button {
         margin-bottom: 1rem;
+
+        @include tablet {
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        @include desktop {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
     }
 
     &__skill-list {
@@ -96,40 +129,36 @@
 
     &__related-projects {
         margin-top: 2rem;
-        background-color: $bg-featured-dark;
-        border-radius: 1rem;
-        padding: 1.5rem;
+        padding-top: 2rem;
+        border-top: solid 2px $border-featured;
         text-align: center;
 
-        @include desktop {
+        @include tablet {
             text-align: left;
         }
     }
 
-    &__related-project-item {
-        margin: 1rem 0;
-        border-radius: 1rem;
-        border: solid 2px $border-primary-light;
-        padding: 1rem 0;
+    &__related-projects-heading {
+        @extend .project__title;
 
-        @include desktop {
-            border: none;
-            border-radius: 0;
-            border-top: solid 1px $border-primary-light;
+
+        @include tablet {
+            padding-left: 1rem;
+        }
+    }
+
+    &__related-projects-container {
+        @include tablet {
+            @include flex;
         }
     }
 
     @include tablet {
-        @include flex(space-between);
         margin: 2rem 4rem;
-        max-width: 1450px;
-
-        &__section {
-            width: 48%;
-        }
-    
-        &__image {
-            width: 100%;
-        }
     }  
+
+    @include desktop {
+        margin: 4rem 10rem;
+        max-width: 1450px;
+    }
 }

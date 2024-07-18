@@ -1,12 +1,13 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+@use "../../App.scss" as *;
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/images/hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: $text-primary-light;
-    padding: 1rem 0;
+    padding: 1rem 0 3rem;
 
     @include flex(center, center);
     flex-direction: column;
@@ -31,12 +32,12 @@
             font-size: 1.375rem;
             font-weight: bold;
 
-            @include desktop {
+            @include tablet {
                 font-size: 2rem;
             }
         }
 
-        @include desktop {
+        @include tablet {
             font-size: 1.75rem;
         }
     }
@@ -46,25 +47,86 @@
     }
 }
 
+.filters {
+
+    margin: -1.5625rem 0 4rem;
+
+    &__triangle-up {
+        width: 0;
+	    height: 0;
+	    border-left: 50vw solid transparent;
+	    border-right: 50vw solid transparent;
+	    border-bottom: 25px solid $bg-featured;
+    }
+
+    &__container {
+        background-color: $bg-featured;
+        padding: 2rem;
+
+        @include tablet {
+            @include flex(center);
+            flex-wrap: wrap;
+            padding: 2rem 10%;
+        }
+    }
+
+    &__button {
+        @extend .button;
+        margin: 0.5rem 0;
+
+        &:hover {
+            background-color: $bg-btn-featured-hover;
+            color: $text-primary-dark;
+        }
+
+        @include tablet {
+            width: 40%;
+            margin: 0.5rem;
+        }
+    }
+
+    &__triangle-down {
+        width: 0;
+	    height: 0;
+	    border-left: 50vw solid transparent;
+	    border-right: 50vw solid transparent;
+	    border-top: 25px solid $bg-featured;
+    }
+}
+
 .work {
+
+    padding: 0 1rem;
 
     &__title {
         font-size: 1.75rem;
-        margin: 1rem 0;
         text-align: center;
 
         @include desktop {
             font-size: 2rem;
-            margin: 2rem 0;
+            margin: 1rem 0;
         }
     }
 
     &__projects-container {
-        @include desktop {
-            @include flex;
+        @include tablet {
+            @include flex(space-between);
             flex-wrap: wrap;
             max-width: 1500px;
             margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        @include desktop {
+            padding: 0 4rem;
+            flex-wrap: nowrap;
         }
     } 
+
+    &__button {
+        @extend .button;
+        @extend .button__featured;
+        margin: 1rem auto;
+        display: block;
+    }
 }

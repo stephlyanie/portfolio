@@ -4,7 +4,7 @@ import { projectList } from "../../api/projectsAPI";
 import { useParams, Link } from "react-router-dom";
 
 import AccordionItem from "../../components/AccordionItem/AccordionItem";
-import RelatedProject from "../../components/RelatedProject/RelatedProject";
+import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
 
 import AccordionGroup from "@mui/joy/AccordionGroup";
 
@@ -22,20 +22,16 @@ function SingleProjectPage() {
 
   return (
     <section className="project">
-      <div className="project__section">
-        <img
-          src={projectObj.thumbnail.url}
-          alt={projectObj.thumbnail.altText}
-          className="project__image"
-        />
-      </div>
-      <div className="project__section">
+      <img
+        src={projectObj.thumbnail.url}
+        alt={projectObj.thumbnail.altText}
+        className="project__image"
+      />
+      <div className="project__details">
         <h1 className="project__title">{projectObj.projectName}</h1>
         <h2 className="project__heading">
           {projectObj.role} |{" "}
-          {projectObj.type === "Freelance"
-            ? projectObj.type
-            : projectObj.client}
+          {projectObj.type === "Freelance" ? projectObj.type : projectObj.client}
         </h2>
         {projectObj.skillLogos ? (
           <div className="project__skill-logos-container">
@@ -51,15 +47,17 @@ function SingleProjectPage() {
             })}
           </div>
         ) : null}
-        {projectObj.projectURL ? (
-          <a
-            href={projectObj.projectURL}
-            className="button button__featured project__button"
-            target="_blank"
-          >
-            Visit Project
-          </a>
-        ) : null}
+      </div>
+      {projectObj.projectURL ? (
+        <a
+          href={projectObj.projectURL}
+          className="button button__featured project__button"
+          target="_blank"
+        >
+          Visit Project
+        </a>
+      ) : null}
+      <div className="project__details">
         <h3 className="project__subheading">Status</h3>
         <p className="project__detail">{projectObj.status}</p>
         <h3 className="project__subheading">Launch Date</h3>
@@ -79,9 +77,18 @@ function SingleProjectPage() {
         <p className="project__detail">{projectObj.solution}</p>
         <p className="project__detail">{projectObj.roleIntro}</p>
         <p className="project__detail">{projectObj.outcomes}</p>
+      </div>
+      <div className="project__accordion">
         <AccordionGroup
           variant="plain"
-          sx={{ ml: -1.5, mb: 3, bgColor: "white" }}
+          disableDivider
+          sx={{
+            ml: -1.5,
+            mb: 3,
+            bgColor: "white",
+            marginLeft: "0",
+            width: "100%",
+          }}
         >
           <AccordionItem
             title={"Learn More About my Role"}
@@ -91,7 +98,10 @@ function SingleProjectPage() {
                 <ul className="project__detail-list">
                   {projectObj.roleList.map((roleListItem) => {
                     return (
-                      <li className="project__detail-list-item" key={roleListItem}>
+                      <li
+                        className="project__detail-list-item"
+                        key={roleListItem}
+                      >
                         {roleListItem}
                       </li>
                     );
@@ -108,7 +118,9 @@ function SingleProjectPage() {
                 <ul className="project__detail-list">
                   {projectObj.nextStepsList.map((step) => {
                     return (
-                      <li className="project__detail-list-item" key={step}>{step}</li>
+                      <li className="project__detail-list-item" key={step}>
+                        {step}
+                      </li>
                     );
                   })}
                 </ul>
@@ -116,49 +128,47 @@ function SingleProjectPage() {
             />
           ) : null}
         </AccordionGroup>
-        {projectObj.projectURL ? (
-          <a
-            href={projectObj.projectURL}
-            className="button project__button"
-            target="_blank"
-          >
-            Visit Project
-          </a>
-        ) : null}
-        {projectObj.supportingLinksList ? (
-          <div className="project__supporting-links-list">
-            {projectObj.supportingLinksList.map((supportingLink) => {
+      </div>
+      {projectObj.projectURL ? (
+        <a
+          href={projectObj.projectURL}
+          className="button button__featured project__button"
+          target="_blank"
+        >
+          Visit Project
+        </a>
+      ) : null}
+      {projectObj.supportingLinksList ? (
+        <div className="project__supporting-links-list project__button">
+          {projectObj.supportingLinksList.map((supportingLink) => {
+            return (
+              <a
+                href={supportingLink.url}
+                className="button button__alt"
+                target="_blank"
+                key={supportingLink.url}
+              >
+                {supportingLink.urlName}
+              </a>
+            );
+          })}
+        </div>
+      ) : null}
+      {projectObj.relatedProjectsList ? (
+        <div className="project__related-projects">
+          <h3 className="project__related-projects-heading">Related Projects</h3>
+          <div className="project__related-projects-container">
+            {projectObj.relatedProjectsList.map((relatedProject) => {
+              const relatedProjectObj = projectList.find(
+                (project) => project.id === `${relatedProject.id}`
+              );
               return (
-                <a
-                  href={supportingLink.url}
-                  className="button button-alt project__button"
-                  target="_blank"
-                  key={supportingLink.url}
-                >
-                  {supportingLink.urlName}
-                </a>
+                  <ProjectPreview data={relatedProjectObj} />
               );
             })}
           </div>
-        ) : null}
-        {projectObj.relatedProjectsList ? (
-            <div className="project__related-projects">
-              <h3 className="project__subheading--light">Related Projects</h3>
-              <div className="project__related-projects-container">
-                {projectObj.relatedProjectsList.map((relatedProject) => {
-                  const relatedProjectObj = projectList.find(
-                    (project) => project.id === `${relatedProject.id}`
-                  );
-                  return (
-                      <div className="project__related-project-item">
-                        <RelatedProject data={relatedProjectObj} />
-                      </div>
-                  )
-                })}
-              </div>
-            </div>
-          ) : null}
-      </div>
+        </div>
+      ) : null}
     </section>
   );
 }

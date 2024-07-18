@@ -2,9 +2,11 @@
 @use "../../styles/variables" as *;
 
 .site-header {
-    background-color: $bg-secondary-dark;
-    padding: 1rem .5rem;
+    background-color: $bg-header;
+    padding: 2rem;
     width: 100%;
+
+    @include flex(space-between, center);
 
     &__logo, &__logo > h1 {
         color: $text-primary-light;

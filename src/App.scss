@@ -1,3 +1,4 @@
+@use "./styles/mixins" as *;
 @use "./styles/variables" as *;
 
 // border-sizing reset
@@ -27,41 +28,44 @@ p {
 }
 
 .button {
-  padding: .75rem 2rem;
+  width: 100%;
+  padding: 1rem 2rem;
   text-decoration: none;
-  background-color: $bg-secondary-dark;
+  background-color: $bg-btn;
   color: $text-primary-light;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   font-weight: bold;
+  text-align: center;
   text-transform: uppercase;
-  margin-right: 1rem;
 
   &:hover {
-    background-color: $bg-primary-light;
+    background-color: $bg-btn-featured;
     color: $text-secondary-dark;
   }
 
   &__featured {
-    background-color: $bg-primary-dark;
-    color: $text-primary-light;
-    border: solid 2px $border-featured-dark;
+    background-color: $bg-btn-featured;
+    color: $text-secondary-dark;
 
     &:hover {
-      background-color: $bg-secondary-light;
-      color: $text-featured-dark;
+      background-color: $bg-btn;
+      color: $text-secondary-light;
     }
   }
-}
 
-.button-alt {
-    border: solid 2px $bg-primary-light;
+  &__alt {
+    background-color: $bg-primary-light;
     color: $text-secondary-dark;
-    background-color: $bg-secondary-light;
+    border: solid 1px $border-secondary-dark;
     font-size: .75rem;
-    padding: .5rem 1rem;
+    width: fit-content;
+    padding: 1rem;
+    margin-right: 0.5rem;
+  }
 
-    &:hover {
-      background-color: $bg-primary-light;
-    }
+  @include tablet {
+    width: fit-content;
+    min-width: 9.25rem;
+  }
 }
